@@ -98,13 +98,6 @@ export default function Navigation() {
               </DropdownMenuContent>
             </DropdownMenu>
 
-            <button
-              onClick={() => scrollToSection('quote')}
-              className="bg-orange-accent hover:bg-orange-accent/90 text-white px-3 py-2 rounded-lg transition-colors font-medium text-sm"
-            >
-              Quote
-            </button>
-
             <Sheet>
               <SheetTrigger asChild>
                 <Button variant="ghost" size="icon" className="text-navy-dark">
