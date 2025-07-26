@@ -87,92 +87,92 @@ export const translations = {
       initialMessage: "Hello! How can we help you with your rope requirements today?"
     }
   },
-  es: {
+  fil: {
     nav: {
-      home: "Inicio",
-      products: "Productos",
-      about: "Acerca de",
-      resources: "Recursos",
-      contact: "Contacto",
-      language: "Español"
+      home: "Tahanan",
+      products: "Mga Produkto",
+      about: "Tungkol",
+      resources: "Mga Mapagkukunan",
+      contact: "Makipag-ugnayan",
+      language: "Filipino"
     },
     hero: {
-      title: "Fuerza En Cada Hebra",
-      subtitle: "Confiado por industrias mundiales por calidad superior, durabilidad y rendimiento",
-      cta1: "Explorar Productos",
-      cta2: "Solicitar Cotización"
+      title: "Lakas sa Bawat Hibla",
+      subtitle: "Pinagkakatiwalaan ng mga industriya sa buong mundo para sa superior na kalidad, tibay, at pagganap",
+      cta1: "Tuklasin ang mga Produkto",
+      cta2: "Humiling ng Quote"
     },
     stats: {
-      years: "Años de Excelencia",
-      countries: "Países Servidos",
-      products: "Variantes de Productos",
-      certified: "Calidad Certificada"
+      years: "Taon ng Kahusayan",
+      countries: "Mga Bansang Pinagsilbihan",
+      products: "Mga Variant ng Produkto",
+      certified: "Sertipikadong Kalidad"
     },
     products: {
-      title: "Nuestra Gama de Productos",
-      subtitle: "Desde aplicaciones marinas hasta soluciones industriales, descubre nuestra gama completa de productos de cuerda premium",
-      viewAll: "Ver Todos los Productos",
-      requestQuote: "Solicitar Cotización"
+      title: "Aming Hanay ng Produkto",
+      subtitle: "Mula sa marine applications hanggang industrial solutions, tuklasin ang aming komprehensibong hanay ng premium rope products",
+      viewAll: "Tingnan Lahat ng Produkto",
+      requestQuote: "Humiling ng Quote"
     },
     filters: {
-      all: "Todos los Productos",
-      marine: "Marino",
+      all: "Lahat ng Produkto",
+      marine: "Marine",
       industrial: "Industrial",
-      construction: "Construcción"
+      construction: "Konstruksiyon"
     },
     quote: {
-      title: "Solicitar Cotización Personalizada",
-      subtitle: "Obtén precios personalizados para pedidos al por mayor y especificaciones personalizadas",
-      submit: "Enviar Solicitud de Cotización",
-      success: "¡Solicitud de cotización enviada exitosamente! Te contactaremos dentro de 24 horas."
+      title: "Humiling ng Custom Quote",
+      subtitle: "Kumuha ng personalized pricing para sa bulk orders at custom specifications",
+      submit: "Ipasa ang Quote Request",
+      success: "Matagumpay na naipadala ang quote request! Makikipag-ugnayan kami sa inyo sa loob ng 24 oras."
     },
     form: {
-      name: "Nombre Completo *",
-      email: "Correo Electrónico *",
-      company: "Empresa",
-      phone: "Número de Teléfono",
-      productType: "Tipo de Producto *",
-      diameter: "Diámetro (mm)",
-      length: "Longitud (m)",
-      quantity: "Cantidad",
-      requirements: "Requisitos Adicionales",
-      files: "Subir Especificaciones (Opcional)"
+      name: "Buong Pangalan *",
+      email: "Email Address *",
+      company: "Kumpanya",
+      phone: "Numero ng Telepono",
+      productType: "Uri ng Produkto *",
+      diameter: "Diameter (mm)",
+      length: "Haba (m)",
+      quantity: "Dami",
+      requirements: "Karagdagang Pangangailangan",
+      files: "I-upload ang Specifications (Opsyonal)"
     },
     about: {
-      title: "70 Años de Excelencia en Fabricación de Cuerdas",
-      description: "Desde 1954, Manila Cordage ha sido el socio de confianza para industrias que requieren soluciones premium de cuerdas. Nuestro compromiso con la calidad, innovación y servicio al cliente nos ha convertido en líder global en fabricación de cuerdas.",
-      feature1: "Procesos de fabricación certificados ISO 9001:2015",
-      feature2: "Abastecimiento sostenible y responsabilidad ambiental",
-      feature3: "Soporte técnico y consultoría 24/7",
-      feature4: "Capacidades de fabricación personalizada",
-      cta: "Conoce Más Sobre Nosotros"
+      title: "70 Taon ng Kahusayan sa Paggawa ng Lubid",
+      description: "Simula 1954, ang Manila Cordage ay naging pinagkakatiwalaang kasosyo para sa mga industriyang nangangailangan ng premium rope solutions. Ang aming pangako sa kalidad, innovation, at customer service ay ginawa kaming pandaigdigang lider sa rope manufacturing.",
+      feature1: "ISO 9001:2015 certified manufacturing processes",
+      feature2: "Sustainable sourcing at environmental responsibility",
+      feature3: "24/7 technical support at consultation",
+      feature4: "Custom manufacturing capabilities",
+      cta: "Matuto Pa Tungkol sa Amin"
     },
     resources: {
-      title: "Recursos Técnicos",
-      subtitle: "Accede a documentación completa, guías de instalación e información de seguridad",
-      download: "Descargar PDFs",
-      access: "Acceder a Herramienta",
-      watch: "Ver Videos"
+      title: "Mga Technical Resources",
+      subtitle: "I-access ang komprehensibong dokumentasyon, installation guides, at safety information",
+      download: "I-download ang mga PDF",
+      access: "I-access ang Tool",
+      watch: "Manood ng mga Video"
     },
     footer: {
-      description: "Fabricante líder de soluciones premium de cuerdas para aplicaciones marinas, industriales y de construcción en todo el mundo.",
-      products: "Productos",
-      company: "Empresa",
-      aboutUs: "Acerca de Nosotros",
-      careers: "Carreras",
-      news: "Noticias",
-      contact: "Contacto",
-      contactInfo: "Información de Contacto",
-      copyright: "© 2024 Manila Cordage. Todos los derechos reservados.",
-      privacy: "Política de Privacidad",
-      terms: "Términos de Servicio",
-      sitemap: "Mapa del Sitio"
+      description: "Nangungunang manufacturer ng premium rope solutions para sa marine, industrial, at construction applications sa buong mundo.",
+      products: "Mga Produkto",
+      company: "Kumpanya",
+      aboutUs: "Tungkol sa Amin",
+      careers: "Mga Career",
+      news: "Balita",
+      contact: "Makipag-ugnayan",
+      contactInfo: "Contact Info",
+      copyright: "© 2024 Manila Cordage. Lahat ng karapatan ay nakalaan.",
+      privacy: "Privacy Policy",
+      terms: "Terms of Service",
+      sitemap: "Sitemap"
     },
     chat: {
-      title: "Soporte en Vivo",
-      subtitle: "¡Estamos aquí para ayudar!",
-      placeholder: "Escribe tu mensaje...",
-      initialMessage: "¡Hola! ¿Cómo podemos ayudarte con tus requisitos de cuerda hoy?"
+      title: "Live Support",
+      subtitle: "Nandito kami para tumulong!",
+      placeholder: "I-type ang inyong mensahe...",
+      initialMessage: "Kumusta! Paano namin kayo matutulungan sa inyong rope requirements ngayon?"
     }
   }
 };

@@ -53,18 +53,18 @@ export default function Navigation() {
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button variant="outline" className="border-navy-dark text-navy-dark hover:bg-gray-50 text-sm">
-                  <Globe className="h-4 w-4 mr-1 xl:mr-2" />
-                  <span className="hidden xl:inline">{t('nav.language')}</span>
-                  <span className="xl:hidden">Lang</span>
-                  <ChevronDown className="h-4 w-4 ml-1 xl:ml-2" />
+                  <span className="text-lg">{language === 'en' ? '🇺🇸' : '🇵🇭'}</span>
+                  <ChevronDown className="h-4 w-4 ml-2" />
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent>
-                <DropdownMenuItem onClick={() => setLanguage('en')}>
-                  English
+                <DropdownMenuItem onClick={() => setLanguage('en')} className="flex items-center space-x-2">
+                  <span className="text-lg">🇺🇸</span>
+                  <span>English</span>
                 </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => setLanguage('es')}>
-                  Español
+                <DropdownMenuItem onClick={() => setLanguage('fil')} className="flex items-center space-x-2">
+                  <span className="text-lg">🇵🇭</span>
+                  <span>Filipino</span>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
@@ -83,17 +83,18 @@ export default function Navigation() {
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button variant="outline" className="border-navy-dark text-navy-dark hover:bg-gray-50 text-sm">
-                  <Globe className="h-4 w-4 mr-1" />
-                  Lang
+                  <span className="text-lg">{language === 'en' ? '🇺🇸' : '🇵🇭'}</span>
                   <ChevronDown className="h-4 w-4 ml-1" />
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent>
-                <DropdownMenuItem onClick={() => setLanguage('en')}>
-                  English
+                <DropdownMenuItem onClick={() => setLanguage('en')} className="flex items-center space-x-2">
+                  <span className="text-lg">🇺🇸</span>
+                  <span>English</span>
                 </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => setLanguage('es')}>
-                  Español
+                <DropdownMenuItem onClick={() => setLanguage('fil')} className="flex items-center space-x-2">
+                  <span className="text-lg">🇵🇭</span>
+                  <span>Filipino</span>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
@@ -150,27 +151,29 @@ export default function Navigation() {
                   ))}
                   
                   <div className="pt-4 mt-4 border-t border-gray-200">
-                    <p className="text-navy-dark font-medium mb-3">Language / Idioma</p>
+                    <p className="text-navy-dark font-medium mb-3">Language / Wika</p>
                     <div className="space-y-2">
                       <button
                         onClick={() => setLanguage('en')}
-                        className={`block py-2 text-left w-full transition-colors ${
+                        className={`flex items-center space-x-2 py-2 text-left w-full transition-colors ${
                           language === 'en' 
                             ? 'text-orange-accent font-medium' 
                             : 'text-navy-dark hover:text-orange-accent'
                         }`}
                       >
-                        English
+                        <span className="text-lg">🇺🇸</span>
+                        <span>English</span>
                       </button>
                       <button
-                        onClick={() => setLanguage('es')}
-                        className={`block py-2 text-left w-full transition-colors ${
-                          language === 'es' 
+                        onClick={() => setLanguage('fil')}
+                        className={`flex items-center space-x-2 py-2 text-left w-full transition-colors ${
+                          language === 'fil' 
                             ? 'text-orange-accent font-medium' 
                             : 'text-navy-dark hover:text-orange-accent'
                         }`}
                       >
-                        Español
+                        <span className="text-lg">🇵🇭</span>
+                        <span>Filipino</span>
                       </button>
                     </div>
                   </div>
