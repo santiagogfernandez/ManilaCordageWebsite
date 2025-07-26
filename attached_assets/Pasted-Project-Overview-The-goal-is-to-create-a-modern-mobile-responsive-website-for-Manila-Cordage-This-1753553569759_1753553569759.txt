@@ -1,0 +1,139 @@
+Project Overview:
+The goal is to create a modern, mobile-responsive website for Manila Cordage. This website will showcase the company’s products, provide easy access to technical resources, enable users to request quotes, and allow real-time communication via live chat. The website will be multilingual at launch, with future support for ERP integration to handle inventory and pricing updates.
+
+Core Features
+Homepage Redesign:
+
+Clean, modern design with prominent product sections.
+
+Responsive layout that works across desktop, tablet, and mobile.
+
+Product Catalog:
+
+A dynamic, searchable catalog of rope products with detailed descriptions, specifications, and high-quality images.
+
+Filtering options for product type, material, and use case.
+
+Product comparison tool for up to three products.
+
+Integration of live stock information (via future ERP integration, if available).
+
+Quote Request Form:
+
+Easy-to-use form where users can submit requests for bulk or custom orders, specifying product quantities and other requirements.
+
+Ability for users to upload custom specifications or files.
+
+Live Chat Integration:
+
+Real-time chat support system using a chatbot or customer service agent for answering user queries on-demand.
+
+Resource Center:
+
+Downloadable datasheets, installation guides, and case studies.
+
+Organized into sections like “Product Guides,” “Safety,” and “Application Use Cases.”
+
+Multi-Language Support:
+
+Language toggle button allowing users to switch between languages (English + 1 additional language to start).
+
+All core website content should be translated and stored in multiple languages for global users.
+
+SEO Optimization:
+
+Ensure all content, product listings, and pages are SEO-friendly (title tags, meta descriptions, alt text for images).
+
+URL structure optimized for keywords.
+
+Google Analytics and monitoring tools integration.
+
+Technical Specifications
+Frontend:
+
+Responsive design with a mobile-first approach using flexible grid systems like Bootstrap or Flexbox.
+
+Dynamic interactions and transitions built with JavaScript (React or vanilla JS).
+
+Use of modern HTML5 and CSS3 to ensure a clean and accessible UI.
+
+Backend:
+
+CMS integration (e.g., WordPress, Webflow, or a custom solution on Bubble.io).
+
+Data-driven pages with easy content updates via an admin interface.
+
+Ability to integrate with external APIs for ERP or inventory data (when ready).
+
+Integrations:
+
+Multi-language support with dynamic language switching (Google Translate or custom solution).
+
+ERP system integration to pull live inventory and pricing information (consider future API availability).
+
+Real-time live chat feature (using tools like Intercom, Drift, or a custom chat API).
+
+Google Analytics integration for tracking user behavior, traffic, and conversions.
+
+Security:
+
+SSL encryption across the website.
+
+Secure login protocols for admin and users.
+
+GDPR compliance for data handling, especially for users in the EU.
+
+User Flows
+Product Search and Quote Request Flow:
+
+User visits the homepage, searches for products based on categories or keywords.
+
+Selects a product, views details, and clicks “Request a Quote.”
+
+Fills in the quote request form with quantity and other customization requirements.
+
+Submits the form for review.
+
+Download Resource Flow:
+
+User navigates to the Resource Center.
+
+Browses or searches for datasheets, guides, and case studies.
+
+Clicks on the relevant document to download or access additional resources.
+
+Multi-Language Flow:
+
+User clicks the language toggle in the header/footer.
+
+Website content updates to the selected language (ensure all resources are properly translated).
+
+Platform Requirements
+The website should be built using one of the following platforms:
+
+Bubble.io: To create a fully functional web app with drag-and-drop components and dynamic content management.
+
+Replit: For custom-built websites with backend integration, perfect for connecting to APIs or building custom logic.
+
+Lovable: For a simple, no-code approach if the focus is on quick deployment and easy management.
+
+Windsurf: For building websites with a focus on modern UI/UX and customizable design.
+
+Cursor: To build a code-first solution with collaboration features if advanced customization is required.
+
+Additional Requirements
+Analytics: Google Analytics integration to monitor performance metrics (user sessions, conversion rates, bounce rates).
+
+Responsive Design: The website must be fully responsive across all devices (desktop, mobile, tablet).
+
+SEO Optimization: Implement SEO best practices, including semantic HTML, image optimization, and clean URLs.
+
+Content Management System: Ensure that all content (including product details, resources, and case studies) can be easily updated from the backend.
+
+Assumptions and Considerations
+ERP Integration: Although the ERP integration is not fully defined, the website should be built with flexibility to integrate with an ERP system once it is determined.
+
+Multi-Language: Start with English and one other language (e.g., Spanish or French), with the potential for more languages as needed.
+
+Hosting and Deployment: Choose a platform that provides scalable hosting solutions to support future growth in traffic and content updates.
+
