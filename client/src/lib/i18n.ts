@@ -9,7 +9,7 @@ export const translations = {
       language: "English"
     },
     hero: {
-      title: "Premium Rope Manufacturing",
+      title: "Strength In Every Strand",
       subtitle: "Trusted by industries worldwide for superior quality, durability, and performance",
       cta1: "Explore Products",
       cta2: "Request Quote"
@@ -97,7 +97,7 @@ export const translations = {
       language: "Español"
     },
     hero: {
-      title: "Fabricación Premium de Cuerdas",
+      title: "Fuerza En Cada Hebra",
       subtitle: "Confiado por industrias mundiales por calidad superior, durabilidad y rendimiento",
       cta1: "Explorar Productos",
       cta2: "Solicitar Cotización"
