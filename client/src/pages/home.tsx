@@ -40,10 +40,6 @@ export default function Home() {
       <Navigation />
       <HeroSection />
       <StatsSection />
-      <ProductsSection />
-      <QuoteSection />
-      <AboutSection />
-      <ResourcesSection />
       <Footer />
       <ChatWidget />
     </div>
