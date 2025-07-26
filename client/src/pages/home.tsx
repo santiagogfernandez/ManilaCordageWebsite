@@ -1,0 +1,51 @@
+import { useEffect } from "react";
+import Navigation from "@/components/navigation";
+import HeroSection from "@/components/hero-section";
+import StatsSection from "@/components/stats-section";
+import ProductsSection from "@/components/products-section";
+import QuoteSection from "@/components/quote-section";
+import AboutSection from "@/components/about-section";
+import ResourcesSection from "@/components/resources-section";
+import Footer from "@/components/footer";
+import ChatWidget from "@/components/chat-widget";
+
+export default function Home() {
+  useEffect(() => {
+    // Set SEO meta tags
+    document.title = "Manila Cordage - Premium Rope Manufacturing Solutions";
+    
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'Leading manufacturer of high-quality rope products for marine, industrial, and construction applications. Expert craftsmanship since 1950.');
+    } else {
+      const meta = document.createElement('meta');
+      meta.name = 'description';
+      meta.content = 'Leading manufacturer of high-quality rope products for marine, industrial, and construction applications. Expert craftsmanship since 1950.';
+      document.head.appendChild(meta);
+    }
+
+    const metaKeywords = document.querySelector('meta[name="keywords"]');
+    if (metaKeywords) {
+      metaKeywords.setAttribute('content', 'rope manufacturing, manila rope, marine rope, industrial rope, construction rope, cordage');
+    } else {
+      const meta = document.createElement('meta');
+      meta.name = 'keywords';
+      meta.content = 'rope manufacturing, manila rope, marine rope, industrial rope, construction rope, cordage';
+      document.head.appendChild(meta);
+    }
+  }, []);
+
+  return (
+    <div className="min-h-screen bg-white">
+      <Navigation />
+      <HeroSection />
+      <StatsSection />
+      <ProductsSection />
+      <QuoteSection />
+      <AboutSection />
+      <ResourcesSection />
+      <Footer />
+      <ChatWidget />
+    </div>
+  );
+}
