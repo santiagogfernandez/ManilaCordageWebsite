@@ -25,25 +25,25 @@ export default function Navigation() {
   ];
 
   return (
-    <header className="bg-navy-dark text-white sticky top-0 z-50">
-      <nav className="container mx-auto px-4 py-4">
+    <header className="bg-white text-navy-dark sticky top-0 z-50 shadow-sm border-b border-gray-200">
+      <nav className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center">
             <img 
               src={logoImage} 
               alt="Manila Cordage Company" 
-              className="h-8 w-auto"
+              className="h-10 w-auto"
             />
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-6">
             {navItems.map((item) => (
               <button
                 key={item.key}
                 onClick={() => scrollToSection(item.id)}
-                className="hover:text-accent-blue transition-colors"
+                className="text-navy-dark hover:text-orange-accent transition-colors font-medium"
               >
                 {t(`nav.${item.key}`)}
               </button>
@@ -52,7 +52,7 @@ export default function Navigation() {
             {/* Language Toggle */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="outline" className="bg-navy-light border-navy-light hover:bg-opacity-80 text-white">
+                <Button variant="outline" className="border-navy-dark text-navy-dark hover:bg-gray-50">
                   <Globe className="h-4 w-4 mr-2" />
                   {t('nav.language')}
                   <ChevronDown className="h-4 w-4 ml-2" />
@@ -67,12 +67,20 @@ export default function Navigation() {
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
+
+            {/* Get Quote Button */}
+            <button
+              onClick={() => scrollToSection('quote')}
+              className="bg-orange-accent hover:bg-orange-accent/90 text-white px-4 py-2 rounded-lg transition-colors font-medium"
+            >
+              {t('nav.quote')}
+            </button>
           </div>
 
           {/* Mobile Menu */}
           <Sheet>
             <SheetTrigger asChild>
-              <Button variant="ghost" size="icon" className="md:hidden text-white">
+              <Button variant="ghost" size="icon" className="md:hidden text-navy-dark">
                 <Menu className="h-6 w-6" />
               </Button>
             </SheetTrigger>
