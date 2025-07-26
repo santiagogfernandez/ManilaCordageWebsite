@@ -1,5 +1,6 @@
 import { Anchor, Facebook, Linkedin, Youtube, Instagram, MapPin, Phone, Mail } from "lucide-react";
 import { useLanguage } from "@/hooks/use-language";
+import logoImage from "@assets/MCC-Logos-1a_1753554774356.gif";
 
 export default function Footer() {
   const { t } = useLanguage();
@@ -41,7 +42,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center space-x-2 mb-6">
               <img 
-                src="/attached_assets/MCC-Logos-1a_1753554774356.gif" 
+                src={logoImage} 
                 alt="Manila Cordage Company" 
                 className="h-8 w-auto"
               />

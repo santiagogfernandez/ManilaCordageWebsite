@@ -4,6 +4,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import { Menu, Anchor, Globe, ChevronDown } from "lucide-react";
 import { useLanguage } from "@/hooks/use-language";
+import logoImage from "@assets/MCC-Logos-1a_1753554774356.gif";
 
 export default function Navigation() {
   const { language, setLanguage, t } = useLanguage();
@@ -30,7 +31,7 @@ export default function Navigation() {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <img 
-              src="/attached_assets/MCC-Logos-1a_1753554774356.gif" 
+              src={logoImage} 
               alt="Manila Cordage Company" 
               className="h-8 w-auto"
             />
