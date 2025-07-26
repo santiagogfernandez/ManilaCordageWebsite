@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/hooks/use-language";
+import ropeBackground from "@assets/sample-board-1ba_1753558988306.jpg";
 
 export default function HeroSection() {
   const { t } = useLanguage();
@@ -14,12 +15,12 @@ export default function HeroSection() {
   return (
     <section 
       id="home" 
-      className="relative min-h-screen h-screen flex items-center justify-center text-white bg-cover bg-center bg-fixed md:bg-fixed bg-scroll"
+      className="relative h-[60vh] sm:h-[70vh] lg:h-[80vh] flex items-center justify-center text-white bg-cover bg-center"
       style={{
-        backgroundImage: `linear-gradient(rgba(30, 41, 59, 0.7), rgba(30, 41, 59, 0.7)), url('https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2000&h=1200')`
+        backgroundImage: `linear-gradient(rgba(30, 41, 59, 0.8), rgba(30, 41, 59, 0.8)), url(${ropeBackground})`
       }}
     >
-      <div className="relative z-10 text-center max-w-4xl mx-auto container-padding safe-padding section-padding">
+      <div className="relative z-10 text-center max-w-4xl mx-auto container-padding safe-padding py-16 sm:py-20">
         <h1 className="responsive-heading font-bold mb-4 sm:mb-6 leading-tight hero-title">
           {t('hero.title')}
         </h1>
