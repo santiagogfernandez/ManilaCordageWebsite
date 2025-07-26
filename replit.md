@@ -22,7 +22,7 @@ Preferred communication style: Simple, everyday language.
 ### Backend Architecture
 - **Framework**: Express.js with TypeScript
 - **Runtime**: Node.js with ES modules
-- **Storage**: In-memory storage with plans for PostgreSQL integration via Drizzle ORM
+- **Storage**: PostgreSQL database with Drizzle ORM for persistent data storage
 - **File Uploads**: Multer middleware for handling file attachments
 - **API Design**: RESTful API structure
 
@@ -62,7 +62,7 @@ The application uses Drizzle ORM with PostgreSQL dialect and includes three main
 
 1. **Client Requests**: Frontend makes API calls using TanStack Query
 2. **Server Processing**: Express.js handles requests and validates data
-3. **Storage Operations**: In-memory storage (with future database integration)
+3. **Database Operations**: PostgreSQL database operations via Drizzle ORM
 4. **File Handling**: Multer processes file uploads for quote requests
 5. **Response Formatting**: Structured JSON responses with error handling
 

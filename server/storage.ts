@@ -1,5 +1,7 @@
-import { type Product, type InsertProduct, type QuoteRequest, type InsertQuoteRequest, type Resource, type InsertResource } from "@shared/schema";
+import { type Product, type InsertProduct, type QuoteRequest, type InsertQuoteRequest, type Resource, type InsertResource, products, quoteRequests, resources } from "@shared/schema";
 import { randomUUID } from "crypto";
+import { db } from "./db";
+import { eq } from "drizzle-orm";
 
 export interface IStorage {
   // Products
@@ -20,239 +22,65 @@ export interface IStorage {
   createResource(resource: InsertResource): Promise<Resource>;
 }
 
-export class MemStorage implements IStorage {
-  private products: Map<string, Product>;
-  private quoteRequests: Map<string, QuoteRequest>;
-  private resources: Map<string, Resource>;
-
-  constructor() {
-    this.products = new Map();
-    this.quoteRequests = new Map();
-    this.resources = new Map();
-    this.seedData();
-  }
-
-  private seedData() {
-    // Seed products
-    const sampleProducts: Product[] = [
-      {
-        id: "1",
-        name: "Manila Marine Rope",
-        description: "Premium natural fiber rope ideal for marine applications with excellent grip and durability.",
-        category: "marine",
-        diameterMin: 12,
-        diameterMax: 50,
-        material: "Natural Manila Fiber",
-        features: ["Marine Grade", "UV Resistant", "Excellent Grip"],
-        imageUrl: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-        isActive: true,
-      },
-      {
-        id: "2",
-        name: "Polypropylene Industrial Rope",
-        description: "High-strength synthetic rope engineered for heavy-duty industrial applications and lifting operations.",
-        category: "industrial",
-        diameterMin: 8,
-        diameterMax: 32,
-        material: "Polypropylene",
-        features: ["Heavy Duty", "Chemical Resistant", "High Strength"],
-        imageUrl: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-        isActive: true,
-      },
-      {
-        id: "3",
-        name: "Safety Construction Rope",
-        description: "OSHA-compliant safety rope designed for construction, climbing, and fall protection applications.",
-        category: "construction",
-        diameterMin: 10,
-        diameterMax: 16,
-        material: "Nylon Core with Polyester Sheath",
-        features: ["Safety Rated", "OSHA Compliant", "Fall Protection"],
-        imageUrl: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-        isActive: true,
-      },
-      {
-        id: "4",
-        name: "Yacht Rigging Rope",
-        description: "Premium marine rope specifically designed for yacht rigging with superior UV and saltwater resistance.",
-        category: "marine",
-        diameterMin: 6,
-        diameterMax: 20,
-        material: "Polyester Core with Dyneema",
-        features: ["UV Resistant", "Saltwater Resistant", "Low Stretch"],
-        imageUrl: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-        isActive: true,
-      },
-      {
-        id: "5",
-        name: "Steel Wire Rope",
-        description: "High-tensile steel wire rope for crane operations, lifting equipment, and heavy machinery applications.",
-        category: "industrial",
-        diameterMin: 3,
-        diameterMax: 40,
-        material: "Galvanized Steel Wire",
-        features: ["Steel Core", "High Tensile", "Corrosion Resistant"],
-        imageUrl: "https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-        isActive: true,
-      },
-      {
-        id: "6",
-        name: "Dynamic Climbing Rope",
-        description: "Professional-grade dynamic rope for rock climbing, mountaineering, and specialized rescue operations.",
-        category: "construction",
-        diameterMin: 9,
-        diameterMax: 11,
-        material: "Nylon Dynamic Core",
-        features: ["Dynamic", "CE Certified", "Rescue Grade"],
-        imageUrl: "https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-        isActive: true,
-      },
-    ];
-
-    sampleProducts.forEach(product => {
-      this.products.set(product.id, product);
-    });
-
-    // Seed resources
-    const sampleResources: Resource[] = [
-      {
-        id: "1",
-        title: "Product Datasheets",
-        description: "Detailed specifications, load ratings, and technical properties for all our rope products.",
-        type: "datasheet",
-        fileUrl: "/api/resources/download/datasheets.pdf",
-        iconClass: "fas fa-file-pdf",
-        isActive: true,
-      },
-      {
-        id: "2",
-        title: "Installation Guides",
-        description: "Step-by-step installation procedures and best practices for optimal rope performance.",
-        type: "guide",
-        fileUrl: "/api/resources/download/installation-guides.pdf",
-        iconClass: "fas fa-tools",
-        isActive: true,
-      },
-      {
-        id: "3",
-        title: "Safety Documentation",
-        description: "Safety guidelines, inspection protocols, and compliance certifications for workplace safety.",
-        type: "safety",
-        fileUrl: "/api/resources/download/safety-docs.pdf",
-        iconClass: "fas fa-shield-alt",
-        isActive: true,
-      },
-      {
-        id: "4",
-        title: "Case Studies",
-        description: "Real-world applications and success stories from various industries using our rope solutions.",
-        type: "case-study",
-        fileUrl: "/api/resources/download/case-studies.pdf",
-        iconClass: "fas fa-chart-line",
-        isActive: true,
-      },
-      {
-        id: "5",
-        title: "Load Calculators",
-        description: "Interactive tools to calculate working load limits and safety factors for your applications.",
-        type: "calculator",
-        fileUrl: "/tools/load-calculator",
-        iconClass: "fas fa-calculator",
-        isActive: true,
-      },
-      {
-        id: "6",
-        title: "Training Videos",
-        description: "Professional training videos covering proper handling, inspection, and maintenance techniques.",
-        type: "video",
-        fileUrl: "/training/videos",
-        iconClass: "fas fa-video",
-        isActive: true,
-      },
-    ];
-
-    sampleResources.forEach(resource => {
-      this.resources.set(resource.id, resource);
-    });
-  }
-
+export class DatabaseStorage implements IStorage {
   async getProducts(): Promise<Product[]> {
-    return Array.from(this.products.values()).filter(p => p.isActive);
+    return await db.select().from(products).where(eq(products.isActive, true));
   }
 
   async getProductsByCategory(category: string): Promise<Product[]> {
-    return Array.from(this.products.values()).filter(p => p.isActive && p.category === category);
+    return await db.select().from(products).where(eq(products.category, category));
   }
 
   async getProduct(id: string): Promise<Product | undefined> {
-    return this.products.get(id);
+    const [product] = await db.select().from(products).where(eq(products.id, id));
+    return product || undefined;
   }
 
   async createProduct(insertProduct: InsertProduct): Promise<Product> {
-    const id = randomUUID();
-    const product: Product = { 
-      ...insertProduct, 
-      id, 
-      isActive: true,
-      features: insertProduct.features ?? null,
-      imageUrl: insertProduct.imageUrl ?? null
-    };
-    this.products.set(id, product);
+    const [product] = await db
+      .insert(products)
+      .values(insertProduct)
+      .returning();
     return product;
   }
 
   async getQuoteRequests(): Promise<QuoteRequest[]> {
-    return Array.from(this.quoteRequests.values());
+    return await db.select().from(quoteRequests);
   }
 
   async getQuoteRequest(id: string): Promise<QuoteRequest | undefined> {
-    return this.quoteRequests.get(id);
+    const [request] = await db.select().from(quoteRequests).where(eq(quoteRequests.id, id));
+    return request || undefined;
   }
 
   async createQuoteRequest(insertRequest: InsertQuoteRequest): Promise<QuoteRequest> {
-    const id = randomUUID();
-    const request: QuoteRequest = { 
-      ...insertRequest, 
-      id, 
-      status: "pending",
-      createdAt: new Date(),
-      company: insertRequest.company ?? null,
-      phone: insertRequest.phone ?? null,
-      diameter: insertRequest.diameter ?? null,
-      length: insertRequest.length ?? null,
-      quantity: insertRequest.quantity ?? null,
-      requirements: insertRequest.requirements ?? null,
-      fileNames: insertRequest.fileNames ?? null
-    };
-    this.quoteRequests.set(id, request);
+    const [request] = await db
+      .insert(quoteRequests)
+      .values(insertRequest)
+      .returning();
     return request;
   }
 
   async getResources(): Promise<Resource[]> {
-    return Array.from(this.resources.values()).filter(r => r.isActive);
+    return await db.select().from(resources).where(eq(resources.isActive, true));
   }
 
   async getResourcesByType(type: string): Promise<Resource[]> {
-    return Array.from(this.resources.values()).filter(r => r.isActive && r.type === type);
+    return await db.select().from(resources).where(eq(resources.type, type));
   }
 
   async getResource(id: string): Promise<Resource | undefined> {
-    return this.resources.get(id);
+    const [resource] = await db.select().from(resources).where(eq(resources.id, id));
+    return resource || undefined;
   }
 
   async createResource(insertResource: InsertResource): Promise<Resource> {
-    const id = randomUUID();
-    const resource: Resource = { 
-      ...insertResource, 
-      id, 
-      isActive: true,
-      description: insertResource.description ?? null,
-      fileUrl: insertResource.fileUrl ?? null,
-      iconClass: insertResource.iconClass ?? null
-    };
-    this.resources.set(id, resource);
+    const [resource] = await db
+      .insert(resources)
+      .values(insertResource)
+      .returning();
     return resource;
   }
 }
 
-export const storage = new MemStorage();
+export const storage = new DatabaseStorage();
