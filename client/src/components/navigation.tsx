@@ -26,19 +26,19 @@ export default function Navigation() {
 
   return (
     <header className="bg-white text-navy-dark sticky top-0 z-50 shadow-sm border-b border-gray-200">
-      <nav className="container mx-auto px-4 py-3">
+      <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center">
+          <div className="flex items-center min-w-0 flex-shrink-0 mr-8">
             <img 
               src={logoImage} 
               alt="Manila Cordage Company" 
-              className="h-10 w-auto"
+              className="h-12 w-auto"
             />
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-6">
+          <div className="hidden md:flex items-center space-x-6 flex-1 justify-end">
             {navItems.map((item) => (
               <button
                 key={item.key}
