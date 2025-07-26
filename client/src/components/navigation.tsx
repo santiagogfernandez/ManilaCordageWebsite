@@ -29,8 +29,11 @@ export default function Navigation() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <Anchor className="h-8 w-8 text-accent-blue" />
-            <span className="text-xl font-bold">Manila Cordage</span>
+            <img 
+              src="/attached_assets/MCC-Logos-1a_1753554774356.gif" 
+              alt="Manila Cordage Company" 
+              className="h-8 w-auto"
+            />
           </div>
 
           {/* Desktop Navigation */}
