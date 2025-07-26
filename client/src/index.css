@@ -67,6 +67,25 @@
   html {
     scroll-behavior: smooth;
   }
+
+  /* Improve mobile touch targets */
+  @media (max-width: 768px) {
+    button, a {
+      min-height: 44px;
+      min-width: 44px;
+    }
+  }
+
+  /* Prevent horizontal scrolling on mobile */
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Optimize images for mobile */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 @layer utilities {
@@ -121,6 +140,50 @@
 
 .chat-widget {
   z-index: 1000;
+}
+
+/* Responsive spacing utilities */
+.section-padding {
+  @apply py-12 sm:py-16 lg:py-20;
+}
+
+.container-padding {
+  @apply px-4 sm:px-6 lg:px-8;
+}
+
+/* Mobile-first responsive text sizes */
+.responsive-heading {
+  @apply text-2xl sm:text-3xl lg:text-4xl xl:text-5xl;
+}
+
+.responsive-subheading {
+  @apply text-xl sm:text-2xl lg:text-3xl;
+}
+
+.responsive-body {
+  @apply text-base sm:text-lg;
+}
+
+/* Touch-friendly buttons */
+.touch-button {
+  @apply min-h-[44px] min-w-[44px] text-center flex items-center justify-center;
+}
+
+/* Prevent layout shift on load */
+.aspect-ratio-16-9 {
+  aspect-ratio: 16 / 9;
+}
+
+.aspect-ratio-4-3 {
+  aspect-ratio: 4 / 3;
+}
+
+/* Safe area insets for mobile devices */
+@supports (padding: max(0px)) {
+  .safe-padding {
+    padding-left: max(1rem, env(safe-area-inset-left));
+    padding-right: max(1rem, env(safe-area-inset-right));
+  }
 }
 
 @media (max-width: 768px) {
