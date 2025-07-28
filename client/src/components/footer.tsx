@@ -1,4 +1,4 @@
-import { Anchor, Facebook, Linkedin, Youtube, Instagram, MapPin, Phone, Mail } from "lucide-react";
+import { Anchor, Facebook, Linkedin, Youtube, Instagram, MapPin, Phone, Mail, Smartphone } from "lucide-react";
 import { useLanguage } from "@/hooks/use-language";
 import logoImage from "@assets/MCC-Logos-1a_1753554774356.gif";
 
@@ -116,7 +116,11 @@ export default function Footer() {
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-accent-blue" />
-                <span className="text-gray-300">+63 2 1234 5678</span>
+                <span className="text-gray-300">+632 8860 4500</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <Smartphone className="h-5 w-5 text-accent-blue" />
+                <span className="text-gray-300">+63 917 8860973</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-accent-blue" />
