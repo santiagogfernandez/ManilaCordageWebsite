@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useLanguage } from "@/hooks/use-language";
 import skylineImage from "@assets/SkylineNew-a_1753734287907.jpg";
-import nylineImage from "@assets/Nyline-2aa (1)_1753734541707.jpg";
+import nylineImage from "@assets/nyline-rope.jpg";
 
 export default function BrandsSection() {
   const { t } = useLanguage();
