@@ -120,7 +120,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-accent-blue" />
-                <span className="text-gray-300">info@manilacordage.com</span>
+                <span className="text-gray-300">ropes@manilacordage.net</span>
               </div>
             </div>
           </div>
