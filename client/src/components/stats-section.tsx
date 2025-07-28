@@ -22,8 +22,8 @@ export default function StatsSection() {
     },
     {
       icon: Building2,
-      number: "ISO",
-      label: "Certified"
+      number: "USA",
+      label: t('stats.certified')
     }
   ];
 
