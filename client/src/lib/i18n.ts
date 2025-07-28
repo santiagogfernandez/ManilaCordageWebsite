@@ -15,7 +15,7 @@ export const translations = {
       cta2: "Request Quote"
     },
     stats: {
-      years: "Years of Excellence",
+      years: "Years of Quality Rope Making",
       countries: "Countries Served",
       products: "Product Variants",
       certified: "Certified Quality"
@@ -103,7 +103,7 @@ export const translations = {
       cta2: "Humiling ng Quote"
     },
     stats: {
-      years: "Taon ng Kahusayan",
+      years: "Taon ng Kalidad na Paggawa ng Lubid",
       countries: "Mga Bansang Pinagsilbihan",
       products: "Mga Variant ng Produkto",
       certified: "Sertipikadong Kalidad"

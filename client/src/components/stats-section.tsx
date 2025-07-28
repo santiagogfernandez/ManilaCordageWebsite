@@ -7,7 +7,7 @@ export default function StatsSection() {
   const stats = [
     {
       icon: Factory,
-      number: "70+",
+      number: "100+",
       label: t('stats.years')
     },
     {
