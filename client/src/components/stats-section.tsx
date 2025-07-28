@@ -22,7 +22,7 @@ export default function StatsSection() {
     },
     {
       icon: Building2,
-      number: "USA",
+      number: "Member",
       label: t('stats.certified')
     }
   ];
