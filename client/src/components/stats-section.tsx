@@ -38,7 +38,7 @@ export default function StatsSection() {
                 <div className="flex items-center justify-center mb-4">
                   <IconComponent className="h-12 w-12 text-accent-blue" />
                 </div>
-                <h3 className="text-3xl font-bold text-navy-dark mb-2">{stat.number}</h3>
+                
                 <p className="text-text-light text-center">{stat.label}</p>
               </div>
             );
