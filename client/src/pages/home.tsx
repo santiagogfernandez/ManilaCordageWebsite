@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import Navigation from "@/components/navigation";
 import HeroSection from "@/components/hero-section";
 import StatsSection from "@/components/stats-section";
+import BrandsSection from "@/components/brands-section";
 import ProductsSection from "@/components/products-section";
 import QuoteSection from "@/components/quote-section";
 import AboutSection from "@/components/about-section";
@@ -40,6 +41,7 @@ export default function Home() {
       <Navigation />
       <HeroSection />
       <StatsSection />
+      <BrandsSection />
       <Footer />
       <ChatWidget />
     </div>
