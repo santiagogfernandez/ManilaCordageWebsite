@@ -17,7 +17,7 @@ export default function StatsSection() {
     },
     {
       icon: Settings,
-      number: "200+",
+      number: "ISO",
       label: t('stats.products')
     },
     {

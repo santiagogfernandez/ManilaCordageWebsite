@@ -17,7 +17,7 @@ export const translations = {
     stats: {
       years: "Years of Quality Rope Making",
       countries: "Countries Served",
-      products: "Product Variants",
+      products: "Certified",
       certified: "Cordage Institute USA"
     },
     products: {
@@ -105,7 +105,7 @@ export const translations = {
     stats: {
       years: "Taon ng Kalidad na Paggawa ng Lubid",
       countries: "Mga Bansang Pinagsilbihan",
-      products: "Mga Variant ng Produkto",
+      products: "Certified",
       certified: "Cordage Institute USA"
     },
     products: {
