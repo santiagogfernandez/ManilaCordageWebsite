@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useLanguage } from "@/hooks/use-language";
 import skylineImage from "@assets/SkylineNew-a_1753734287907.jpg";
+import nylineImage from "@assets/Nyline-2aa (1)_1753734541707.jpg";
 
 export default function BrandsSection() {
   const { t } = useLanguage();
@@ -12,11 +13,11 @@ export default function BrandsSection() {
   const allBrands = [
     {
       id: 1,
-      name: "Bridon® Steel Wire Ropes",
-      description: "Explore our range of Bridon steel wire ropes & hybrid steel rope technologies.",
-      buttonText: "Find a steel rope",
-      imageUrl: "https://images.unsplash.com/photo-1520637836862-4d197d17c55a?w=400&h=250&fit=crop&crop=center",
-      buttonAction: () => console.log("Navigate to steel ropes")
+      name: "Nyline",
+      description: "Explore our range of premium Nylon rope technologies",
+      buttonText: "Find Nylon ropes",
+      imageUrl: nylineImage,
+      buttonAction: () => console.log("Navigate to nylon ropes")
     },
     {
       id: 2,
