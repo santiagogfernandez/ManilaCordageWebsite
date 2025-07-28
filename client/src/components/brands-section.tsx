@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useLanguage } from "@/hooks/use-language";
+import skylineImage from "@assets/SkylineNew-a_1753734287907.jpg";
 
 export default function BrandsSection() {
   const { t } = useLanguage();
@@ -56,6 +57,14 @@ export default function BrandsSection() {
       buttonText: "Marine catalog",
       imageUrl: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400&h=250&fit=crop&crop=center",
       buttonAction: () => console.log("Navigate to marine")
+    },
+    {
+      id: 7,
+      name: "Skyline",
+      description: "Explore our range of Polypropylene Monofilament rope technologies",
+      buttonText: "View Skyline products",
+      imageUrl: skylineImage,
+      buttonAction: () => console.log("Navigate to skyline")
     }
   ];
 
