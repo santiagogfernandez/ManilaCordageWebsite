@@ -18,7 +18,7 @@ export const translations = {
       years: "Years of Quality Rope Making",
       countries: "Countries Served",
       products: "Product Variants",
-      certified: "Certified Quality"
+      certified: "Member of Cordage Institute USA"
     },
     products: {
       title: "Our Product Range",
@@ -106,7 +106,7 @@ export const translations = {
       years: "Taon ng Kalidad na Paggawa ng Lubid",
       countries: "Mga Bansang Pinagsilbihan",
       products: "Mga Variant ng Produkto",
-      certified: "Sertipikadong Kalidad"
+      certified: "Miyembro ng Cordage Institute USA"
     },
     products: {
       title: "Aming Hanay ng Produkto",

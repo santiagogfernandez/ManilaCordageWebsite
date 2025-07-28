@@ -1,4 +1,4 @@
-import { Factory, Globe, Settings, Award } from "lucide-react";
+import { Factory, Globe, Settings, Building2 } from "lucide-react";
 import { useLanguage } from "@/hooks/use-language";
 
 export default function StatsSection() {
@@ -21,8 +21,8 @@ export default function StatsSection() {
       label: t('stats.products')
     },
     {
-      icon: Award,
-      number: "ISO",
+      icon: Building2,
+      number: "USA",
       label: t('stats.certified')
     }
   ];
@@ -34,10 +34,12 @@ export default function StatsSection() {
           {stats.map((stat, index) => {
             const IconComponent = stat.icon;
             return (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-sm">
-                <IconComponent className="h-12 w-12 text-accent-blue mb-4 mx-auto" />
+              <div key={index} className="bg-white p-6 rounded-lg shadow-sm flex flex-col items-center">
+                <div className="flex items-center justify-center mb-4">
+                  <IconComponent className="h-12 w-12 text-accent-blue" />
+                </div>
                 <h3 className="text-3xl font-bold text-navy-dark mb-2">{stat.number}</h3>
-                <p className="text-text-light">{stat.label}</p>
+                <p className="text-text-light text-center">{stat.label}</p>
               </div>
             );
           })}
