@@ -109,8 +109,8 @@ export default function ProductsSection() {
                     {product.description}
                   </p>
                   <div className="flex justify-between items-center mb-4">
-                    <Badge className={getCategoryColor(product.category)}>
-                      {product.features?.[0] || product.category}
+                    <Badge className="bg-green-100 text-green-600">
+                      ISO Certified
                     </Badge>
                     <span className="text-lg font-bold text-navy-dark">
                       {product.diameterMin}-{product.diameterMax}mm
