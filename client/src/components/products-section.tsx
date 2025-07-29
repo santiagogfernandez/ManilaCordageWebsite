@@ -136,6 +136,8 @@ export default function ProductsSection() {
                         return "Ultra‑Light, UV‑Stable Polypropylene Rope Built for the Elements";
                       } else if (currentBrand === "Nyline") {
                         return "High‑Strength Nylon Rope Engineered for Heavy-Duty Load Protection";
+                      } else if (currentBrand === "Terypro") {
+                        return "The Best of Polypropylene & Polyester";
                       } else {
                         return "Premium Natural Manila Rope for Industrial Strength & Resilience";
                       }
