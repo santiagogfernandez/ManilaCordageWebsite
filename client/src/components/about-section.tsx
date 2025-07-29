@@ -48,7 +48,6 @@ export default function AboutSection() {
                 alt="Manila Cordage manufacturing facility" 
                 className="rounded-xl shadow-lg w-full h-auto" 
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/20 to-transparent rounded-xl"></div>
             </div>
           </div>
         </div>
