@@ -3,12 +3,14 @@ import { useLanguage } from "@/hooks/use-language";
 import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
 import { Card, CardContent } from "@/components/ui/card";
+import historicalPhoto from "@assets/MCCHistory2_1753799033849.jpg";
 
 interface TimelineEvent {
   year: string;
   title: string;
   description: string;
   milestone: boolean;
+  image?: string;
 }
 
 export default function History() {
@@ -20,7 +22,8 @@ export default function History() {
       year: "1924",
       title: "Founding Years",
       description: "On February 20, 1924, Manila Cordage Company, a subsidiary of Tubbs Cordage Company of San Francisco, began operations at the junction of Cristobal and Otis streets in Paco, which had easy access to the Pasig. Its basic raw material was abaca, also known as Manila hemp, which by then was a much sought after commodity in North America.",
-      milestone: true
+      milestone: true,
+      image: historicalPhoto
     },
     {
       year: "1950s",
@@ -178,15 +181,19 @@ export default function History() {
                               }`}>
                                 {event.year}
                               </span>
-                              {event.milestone && (
-                                <span className="ml-2 text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full font-medium">
-                                  Milestone
-                                </span>
-                              )}
                             </div>
                             <h3 className="text-xl font-bold text-navy-dark mb-3">
                               {event.title}
                             </h3>
+                            {event.image && (
+                              <div className="mb-4">
+                                <img 
+                                  src={event.image} 
+                                  alt={`${event.title} - ${event.year}`}
+                                  className="w-full h-auto rounded-lg shadow-md object-cover max-h-64 sm:max-h-72 md:max-h-80"
+                                />
+                              </div>
+                            )}
                             <p className="text-gray-600 leading-relaxed">
                               {event.description}
                             </p>
