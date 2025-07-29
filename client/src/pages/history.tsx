@@ -3,7 +3,7 @@ import { useLanguage } from "@/hooks/use-language";
 import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
 import { Card, CardContent } from "@/components/ui/card";
-import historicalPhoto from "@assets/MCCHistory2_1753799033849.jpg";
+import modernPhoto from "@assets/MCC MSI Group_1753799439492.jpg";
 
 interface TimelineEvent {
   year: string;
@@ -23,7 +23,7 @@ export default function History() {
       title: "Founding Years",
       description: "On February 20, 1924, Manila Cordage Company, a subsidiary of Tubbs Cordage Company of San Francisco, began operations at the junction of Cristobal and Otis streets in Paco, which had easy access to the Pasig. Its basic raw material was abaca, also known as Manila hemp, which by then was a much sought after commodity in North America.",
       milestone: true,
-      image: historicalPhoto
+      image: modernPhoto
     },
     {
       year: "1950s",
