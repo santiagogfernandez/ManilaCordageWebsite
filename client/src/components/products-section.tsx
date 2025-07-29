@@ -111,11 +111,7 @@ export default function ProductsSection() {
                   <p className="text-text-light mb-4">
                     Premium Natural Manila Rope for Industrial Strength & Resilience
                   </p>
-                  <div className="flex justify-end items-center mb-4">
-                    <span className="text-lg font-bold text-navy-dark">
-                      {product.diameterMin}-{product.diameterMax}mm
-                    </span>
-                  </div>
+
                 </CardContent>
                 <CardFooter>
                   <Button 
