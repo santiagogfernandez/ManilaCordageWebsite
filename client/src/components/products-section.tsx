@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
+import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
@@ -136,13 +137,14 @@ export default function ProductsSection() {
           <h3 className="text-2xl font-bold text-navy-dark mb-6">
             Need a custom solution?
           </h3>
-          <Button 
-            size="lg"
-            className="bg-orange-accent hover:bg-orange-accent/90 text-white px-8 py-4 font-semibold transition-all"
-            onClick={() => window.location.href = '/custom-quote'}
-          >
-            Custom Quote
-          </Button>
+          <Link href="/custom-quote">
+            <Button 
+              size="lg"
+              className="bg-orange-accent hover:bg-orange-accent/90 text-white px-8 py-4 font-semibold transition-all"
+            >
+              Custom Quote
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
