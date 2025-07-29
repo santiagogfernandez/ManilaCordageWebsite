@@ -6,7 +6,7 @@ import BrandsSection from "@/components/brands-section";
 
 
 import AboutSection from "@/components/about-section";
-import ResourcesSection from "@/components/resources-section";
+
 import Footer from "@/components/footer";
 import ChatWidget from "@/components/chat-widget";
 
@@ -43,7 +43,6 @@ export default function Home() {
       <StatsSection />
       <BrandsSection />
       <AboutSection />
-      <ResourcesSection />
       <Footer />
       <ChatWidget />
     </div>
