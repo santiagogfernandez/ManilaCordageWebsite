@@ -42,13 +42,7 @@ export default function AboutSection() {
               </Button>
             </div>
             
-            <div className="relative">
-              <img 
-                src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-                alt="Manila Cordage manufacturing facility" 
-                className="rounded-xl shadow-lg w-full h-auto" 
-              />
-            </div>
+            
           </div>
         </div>
       </div>
