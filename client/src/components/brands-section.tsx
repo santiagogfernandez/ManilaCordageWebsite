@@ -37,11 +37,11 @@ export default function BrandsSection() {
     },
     {
       id: 4,
-      name: "Manila Premium® Natural Ropes",
-      description: "Traditional manila fiber ropes crafted with decades of expertise for marine and industrial applications.",
-      buttonText: "Find natural ropes",
+      name: "Danline",
+      description: "Explore our range of Polypropylene Danline rope technologies",
+      buttonText: "Find Danline ropes",
       imageUrl: "https://images.unsplash.com/photo-1569163139394-de4e4f43e4e3?w=400&h=250&fit=crop&crop=center",
-      buttonAction: () => console.log("Navigate to natural ropes")
+      buttonAction: () => console.log("Navigate to danline ropes")
     },
     {
       id: 5,
