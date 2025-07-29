@@ -109,7 +109,7 @@ export default function ProductsSection() {
                     Manila Rope
                   </h3>
                   <p className="text-text-light mb-4">
-                    {product.description}
+                    Premium Natural Manila Rope for Industrial Strength & Resilience
                   </p>
                   <div className="flex justify-between items-center mb-4">
                     <Badge className="bg-green-100 text-green-600">
