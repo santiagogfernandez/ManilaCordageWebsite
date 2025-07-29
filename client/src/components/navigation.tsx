@@ -14,9 +14,15 @@ export default function Navigation() {
   const navItems = [
     { key: 'home', path: '/' },
     { key: 'products', path: '/products' },
-    { key: 'about', path: '/about' },
     { key: 'resources', path: '/resources' },
     { key: 'contact', path: '/contact' },
+  ];
+
+  const aboutSubItems = [
+    { key: 'about', path: '/about', label: t('nav.about') },
+    { key: 'history', path: '/about/history', label: t('nav.history') },
+    { key: 'team', path: '/about/team', label: t('nav.team') },
+    { key: 'careers', path: '/about/careers', label: t('nav.careers') },
   ];
 
   return (
@@ -45,6 +51,35 @@ export default function Navigation() {
                 {t(`nav.${item.key}`)}
               </Link>
             ))}
+
+            {/* About Us Dropdown */}
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button 
+                  variant="ghost" 
+                  className={`text-navy-dark hover:text-orange-accent transition-colors font-medium text-sm xl:text-base whitespace-nowrap p-0 h-auto ${
+                    location.startsWith('/about') ? 'text-orange-accent' : ''
+                  }`}
+                >
+                  {t('nav.about')}
+                  <ChevronDown className="h-4 w-4 ml-1" />
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent>
+                {aboutSubItems.map((subItem) => (
+                  <DropdownMenuItem key={subItem.key} asChild>
+                    <Link
+                      href={subItem.path}
+                      className={`w-full cursor-pointer ${
+                        location === subItem.path ? 'text-orange-accent' : ''
+                      }`}
+                    >
+                      {subItem.label}
+                    </Link>
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
 
             {/* Language Toggle */}
             <DropdownMenu>
@@ -116,6 +151,24 @@ export default function Navigation() {
                       {t(`nav.${item.key}`)}
                     </Link>
                   ))}
+                  
+                  {/* About Us Section */}
+                  <div className="border-t border-gray-200 pt-4">
+                    <p className="text-navy-dark font-semibold mb-3">{t('nav.about')}</p>
+                    <div className="space-y-2 pl-4">
+                      {aboutSubItems.map((subItem) => (
+                        <Link
+                          key={subItem.key}
+                          href={subItem.path}
+                          className={`text-navy-dark hover:text-orange-accent transition-colors text-left py-1 text-sm font-medium block ${
+                            location === subItem.path ? 'text-orange-accent' : ''
+                          }`}
+                        >
+                          {subItem.label}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               </SheetContent>
             </Sheet>
@@ -143,13 +196,31 @@ export default function Navigation() {
                     <Link
                       key={item.key}
                       href={item.path}
-                      className={`text-navy-dark hover:text-orange-accent transition-colors text-left py-3 text-base font-medium border-b border-gray-100 last:border-b-0 block ${
+                      className={`text-navy-dark hover:text-orange-accent transition-colors text-left py-3 text-base font-medium border-b border-gray-100 block ${
                         location === item.path ? 'text-orange-accent' : ''
                       }`}
                     >
                       {t(`nav.${item.key}`)}
                     </Link>
                   ))}
+                  
+                  {/* About Us Section */}
+                  <div className="border-b border-gray-100">
+                    <p className="text-navy-dark font-semibold py-3 text-base">{t('nav.about')}</p>
+                    <div className="pl-4 pb-2">
+                      {aboutSubItems.map((subItem) => (
+                        <Link
+                          key={subItem.key}
+                          href={subItem.path}
+                          className={`text-navy-dark hover:text-orange-accent transition-colors text-left py-2 text-sm font-medium block ${
+                            location === subItem.path ? 'text-orange-accent' : ''
+                          }`}
+                        >
+                          {subItem.label}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
                   
                   <div className="pt-4 mt-4 border-t border-gray-200">
                     <p className="text-navy-dark font-medium mb-3">Language / Wika</p>

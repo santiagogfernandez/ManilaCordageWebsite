@@ -3,10 +3,13 @@ export const translations = {
     nav: {
       home: "Home",
       products: "Products",
-      about: "About",
+      about: "About Us",
       resources: "Resources",
       contact: "Contact",
-      language: "English"
+      language: "English",
+      history: "History",
+      team: "Team", 
+      careers: "Careers"
     },
     hero: {
       title: "Strength In Every Strand",
@@ -91,10 +94,13 @@ export const translations = {
     nav: {
       home: "Tahanan",
       products: "Mga Produkto",
-      about: "Tungkol",
+      about: "Tungkol Sa Amin",
       resources: "Mga Mapagkukunan",
       contact: "Makipag-ugnayan",
-      language: "Filipino"
+      language: "Filipino",
+      history: "Kasaysayan",
+      team: "Koponan",
+      careers: "Mga Trabaho"
     },
     hero: {
       title: "Lakas sa Bawat Hibla",
