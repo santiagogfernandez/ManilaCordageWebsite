@@ -1,16 +1,17 @@
 import { Anchor, Facebook, Linkedin, Youtube, Instagram, MapPin, Phone, Mail, Smartphone } from "lucide-react";
 import { useLanguage } from "@/hooks/use-language";
+import { Link } from "wouter";
 import logoImage from "@assets/MCC-Logos-1a_1753554774356.gif";
 
 export default function Footer() {
   const { t } = useLanguage();
 
   const productLinks = [
-    "Manila Rope",
-    "Synthetic Rope", 
-    "Steel Wire Rope",
-    "Marine Rope",
-    "Industrial Rope"
+    { name: "Manila Rope", href: "/products?filter=manila" },
+    { name: "Synthetic Rope", href: "/products?filter=synthetic" }, 
+    { name: "Steel Wire Rope", href: "/products?filter=steel" },
+    { name: "Marine Rope", href: "/products?filter=marine" },
+    { name: "Industrial Rope", href: "/products?filter=industrial" }
   ];
 
   const companyLinks = [
@@ -74,9 +75,9 @@ export default function Footer() {
             <ul className="space-y-3">
               {productLinks.map((product, index) => (
                 <li key={index}>
-                  <a href="#" className="text-gray-300 hover:text-accent-blue transition-colors">
-                    {product}
-                  </a>
+                  <Link href={product.href} className="text-gray-300 hover:text-accent-blue transition-colors">
+                    {product.name}
+                  </Link>
                 </li>
               ))}
             </ul>
