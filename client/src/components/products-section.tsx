@@ -140,6 +140,8 @@ export default function ProductsSection() {
                         return "The Best of Polypropylene & Polyester";
                       } else if (currentBrand === "Esterline") {
                         return "Resilient Polyester Rope for Stability & Low Stretch";
+                      } else if (currentBrand === "Danline") {
+                        return "Strong Polypropylene Rope for Marine & Industrial Use";
                       } else {
                         return "Premium Natural Manila Rope for Industrial Strength & Resilience";
                       }
