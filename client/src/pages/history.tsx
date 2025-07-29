@@ -17,33 +17,33 @@ export default function History() {
 
   const timelineEvents: TimelineEvent[] = [
     {
+      year: "1924",
+      title: "Founding Years",
+      description: "On February 20, 1924, Manila Cordage Company, a subsidiary of Tubbs Cordage Company of San Francisco, began operations at the junction of Cristobal and Otis streets in Paco, which had easy access to the Pasig. Its basic raw material was abaca, also known as Manila hemp, which by then was a much sought after commodity in North America.",
+      milestone: true
+    },
+    {
+      year: "1950s",
+      title: "Post-War Expansion",
+      description: "Following World War II, Manila Cordage rebuilt and expanded operations, adapting to new technologies while maintaining focus on quality abaca fiber processing.",
+      milestone: false
+    },
+    {
+      year: "1970s",
+      title: "Modernization Era",
+      description: "Invested in modern rope manufacturing equipment and techniques, establishing Manila Cordage as a leader in the Philippine cordage industry.",
+      milestone: false
+    },
+    {
+      year: "1990s",
+      title: "Synthetic Fiber Innovation",
+      description: "Expanded product lines to include synthetic fibers alongside traditional abaca, meeting evolving market demands for diverse rope applications.",
+      milestone: true
+    },
+    {
       year: "2001",
-      title: "Manila Cordage Founded",
-      description: "Manila Cordage Company was established with a vision to become the leading rope manufacturer in the Philippines and beyond.",
-      milestone: true
-    },
-    {
-      year: "2003",
-      title: "First Manufacturing Facility",
-      description: "Opened our first state-of-the-art manufacturing facility in Laguna, Philippines, setting the foundation for quality production.",
-      milestone: false
-    },
-    {
-      year: "2005",
-      title: "ISO Certification Achievement",
-      description: "Achieved ISO 9001:2000 certification, demonstrating our commitment to quality management systems and continuous improvement.",
-      milestone: true
-    },
-    {
-      year: "2008",
-      title: "Export Market Expansion",
-      description: "Successfully expanded into international markets, beginning exports to Southeast Asian countries and establishing global partnerships.",
-      milestone: false
-    },
-    {
-      year: "2012",
-      title: "Product Line Diversification",
-      description: "Launched our comprehensive rope product lines including Manila, Nylon, Polyester, and Polypropylene technologies.",
+      title: "New Millennium Growth",
+      description: "Entered the 21st century with renewed focus on quality manufacturing, establishing modern facilities and embracing technological advances.",
       milestone: false
     },
     {
@@ -118,7 +118,7 @@ export default function History() {
               Our History
             </h1>
             <p className="text-lg sm:text-xl text-gray-300 mb-8">
-              Over two decades of excellence in rope manufacturing, innovation, and customer service
+              100+ Years of Quality Rope Making - From 1924 to Today
             </p>
             <div className="w-24 h-1 bg-orange-accent mx-auto"></div>
           </div>
