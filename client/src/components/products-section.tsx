@@ -133,11 +133,15 @@ export default function ProductsSection() {
         </div>
 
         <div className="text-center mt-12">
+          <h3 className="text-2xl font-bold text-navy-dark mb-6">
+            Need a custom solution?
+          </h3>
           <Button 
             size="lg"
-            className="bg-navy-dark hover:bg-navy-light text-white px-8 py-4 font-semibold transition-all"
+            className="bg-orange-accent hover:bg-orange-accent/90 text-white px-8 py-4 font-semibold transition-all"
+            onClick={() => window.location.href = '/custom-quote'}
           >
-            {t('products.viewAll')}
+            Custom Quote
           </Button>
         </div>
       </div>

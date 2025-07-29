@@ -42,6 +42,23 @@ export const resources = pgTable("resources", {
   isActive: boolean("is_active").default(true),
 });
 
+export const customQuotes = pgTable("custom_quotes", {
+  id: varchar("id").primaryKey().default(sql`gen_random_uuid()`),
+  firstName: text("first_name").notNull(),
+  lastName: text("last_name").notNull(),
+  email: text("email").notNull(),
+  phone: text("phone").notNull(),
+  company: text("company").notNull(),
+  industry: text("industry").notNull(),
+  projectType: text("project_type").notNull(),
+  quantity: text("quantity").notNull(),
+  specifications: text("specifications").notNull(),
+  timeline: text("timeline").notNull(),
+  budget: text("budget"),
+  additionalNotes: text("additional_notes"),
+  createdAt: timestamp("created_at").default(sql`CURRENT_TIMESTAMP`),
+});
+
 export const insertProductSchema = createInsertSchema(products).omit({
   id: true,
   isActive: true,
@@ -58,9 +75,16 @@ export const insertResourceSchema = createInsertSchema(resources).omit({
   isActive: true,
 });
 
+export const insertCustomQuoteSchema = createInsertSchema(customQuotes).omit({
+  id: true,
+  createdAt: true,
+});
+
 export type Product = typeof products.$inferSelect;
 export type InsertProduct = z.infer<typeof insertProductSchema>;
 export type QuoteRequest = typeof quoteRequests.$inferSelect;
 export type InsertQuoteRequest = z.infer<typeof insertQuoteRequestSchema>;
 export type Resource = typeof resources.$inferSelect;
 export type InsertResource = z.infer<typeof insertResourceSchema>;
+export type CustomQuote = typeof customQuotes.$inferSelect;
+export type InsertCustomQuote = z.infer<typeof insertCustomQuoteSchema>;

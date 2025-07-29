@@ -1,4 +1,4 @@
-import { type Product, type InsertProduct, type QuoteRequest, type InsertQuoteRequest, type Resource, type InsertResource, products, quoteRequests, resources } from "@shared/schema";
+import { type Product, type InsertProduct, type QuoteRequest, type InsertQuoteRequest, type Resource, type InsertResource, type CustomQuote, type InsertCustomQuote, products, quoteRequests, resources, customQuotes } from "@shared/schema";
 import { randomUUID } from "crypto";
 import { db } from "./db";
 import { eq } from "drizzle-orm";
@@ -20,6 +20,11 @@ export interface IStorage {
   getResourcesByType(type: string): Promise<Resource[]>;
   getResource(id: string): Promise<Resource | undefined>;
   createResource(resource: InsertResource): Promise<Resource>;
+  
+  // Custom Quotes
+  getCustomQuotes(): Promise<CustomQuote[]>;
+  getCustomQuote(id: string): Promise<CustomQuote | undefined>;
+  createCustomQuote(quote: InsertCustomQuote): Promise<CustomQuote>;
 }
 
 export class DatabaseStorage implements IStorage {
@@ -80,6 +85,23 @@ export class DatabaseStorage implements IStorage {
       .values(insertResource)
       .returning();
     return resource;
+  }
+
+  async getCustomQuotes(): Promise<CustomQuote[]> {
+    return await db.select().from(customQuotes);
+  }
+
+  async getCustomQuote(id: string): Promise<CustomQuote | undefined> {
+    const [quote] = await db.select().from(customQuotes).where(eq(customQuotes.id, id));
+    return quote || undefined;
+  }
+
+  async createCustomQuote(insertCustomQuote: InsertCustomQuote): Promise<CustomQuote> {
+    const [quote] = await db
+      .insert(customQuotes)
+      .values(insertCustomQuote)
+      .returning();
+    return quote;
   }
 }
 

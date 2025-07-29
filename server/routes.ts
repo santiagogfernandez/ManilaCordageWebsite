@@ -1,7 +1,7 @@
 import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
-import { insertQuoteRequestSchema } from "@shared/schema";
+import { insertQuoteRequestSchema, insertCustomQuoteSchema } from "@shared/schema";
 import multer from 'multer';
 import path from 'path';
 
@@ -105,6 +105,25 @@ export async function registerRoutes(app: Express): Promise<Server> {
     res.setHeader('Content-Type', 'application/pdf');
     res.setHeader('Content-Disposition', `attachment; filename="${filename}"`);
     res.status(200).send(Buffer.from(`Mock PDF content for ${filename}`));
+  });
+
+  // Custom quotes endpoint
+  app.post("/api/custom-quotes", async (req, res) => {
+    try {
+      const validation = insertCustomQuoteSchema.safeParse(req.body);
+      if (!validation.success) {
+        return res.status(400).json({ 
+          message: "Validation failed", 
+          errors: validation.error.issues 
+        });
+      }
+
+      const customQuote = await storage.createCustomQuote(validation.data);
+      res.status(201).json(customQuote);
+    } catch (error) {
+      console.error("Error creating custom quote:", error);
+      res.status(500).json({ message: "Failed to create custom quote" });
+    }
   });
 
   const httpServer = createServer(app);

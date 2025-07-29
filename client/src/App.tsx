@@ -10,6 +10,7 @@ import About from "@/pages/about";
 import History from "./pages/history";
 import Resources from "@/pages/resources";
 import Contact from "@/pages/contact";
+import CustomQuote from "@/pages/custom-quote";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -21,6 +22,7 @@ function Router() {
       <Route path="/about/history" component={History} />
       <Route path="/resources" component={Resources} />
       <Route path="/contact" component={Contact} />
+      <Route path="/custom-quote" component={CustomQuote} />
       <Route component={NotFound} />
     </Switch>
   );
