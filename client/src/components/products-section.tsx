@@ -114,12 +114,13 @@ export default function ProductsSection() {
 
                 </CardContent>
                 <CardFooter>
-                  <Button 
-                    className="w-full bg-accent-blue hover:bg-blue-600 text-white font-medium transition-all"
-                    onClick={scrollToQuote}
-                  >
-                    {t('products.requestQuote')}
-                  </Button>
+                  <Link href="/contact">
+                    <Button 
+                      className="w-full bg-accent-blue hover:bg-blue-600 text-white font-medium transition-all"
+                    >
+                      {t('products.requestQuote')}
+                    </Button>
+                  </Link>
                 </CardFooter>
               </Card>
             ))
