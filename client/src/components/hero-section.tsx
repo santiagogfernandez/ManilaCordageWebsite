@@ -1,9 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/hooks/use-language";
+import { useLocation } from "wouter";
 import ropeBackground from "@assets/sample-board-1ba_1753558988306.jpg";
 
 export default function HeroSection() {
   const { t } = useLanguage();
+  const [, setLocation] = useLocation();
 
   const scrollToSection = (sectionId: string) => {
     const section = document.getElementById(sectionId);
@@ -31,7 +33,7 @@ export default function HeroSection() {
           <Button 
             size="lg"
             className="bg-accent-blue hover:bg-blue-600 text-white px-6 sm:px-8 py-3 sm:py-4 font-semibold transition-all transform hover:scale-105 w-full sm:w-auto text-base sm:text-lg touch-button"
-            onClick={() => scrollToSection('products')}
+            onClick={() => setLocation('/products')}
           >
             {t('hero.cta1')}
           </Button>
