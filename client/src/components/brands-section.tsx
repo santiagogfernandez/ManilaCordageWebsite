@@ -62,19 +62,20 @@ export default function BrandsSection() {
   ];
 
   const itemsPerPage = 3;
-  const totalPages = Math.ceil(allBrands.length / itemsPerPage);
+  const totalItems = allBrands.length;
+  const totalPages = Math.ceil(totalItems / itemsPerPage);
 
   const getCurrentBrands = () => {
-    const startIndex = currentIndex * itemsPerPage;
+    const startIndex = currentIndex;
     return allBrands.slice(startIndex, startIndex + itemsPerPage);
   };
 
   const goToPrevious = () => {
-    setCurrentIndex((prev) => (prev === 0 ? totalPages - 1 : prev - 1));
+    setCurrentIndex((prev) => (prev === 0 ? totalItems - itemsPerPage : prev - 1));
   };
 
   const goToNext = () => {
-    setCurrentIndex((prev) => (prev === totalPages - 1 ? 0 : prev + 1));
+    setCurrentIndex((prev) => (prev >= totalItems - itemsPerPage ? 0 : prev + 1));
   };
 
   const brands = getCurrentBrands();
@@ -95,7 +96,7 @@ export default function BrandsSection() {
             size="sm"
             className="absolute left-0 top-1/2 -translate-y-1/2 z-10 rounded-full w-12 h-12 p-0 border-navy-dark text-navy-dark hover:bg-navy-dark hover:text-white shadow-lg"
             onClick={goToPrevious}
-            disabled={totalPages <= 1}
+            disabled={totalItems <= itemsPerPage}
           >
             <ChevronLeft className="h-5 w-5" />
           </Button>
@@ -105,7 +106,7 @@ export default function BrandsSection() {
             size="sm"
             className="absolute right-0 top-1/2 -translate-y-1/2 z-10 rounded-full w-12 h-12 p-0 border-navy-dark text-navy-dark hover:bg-navy-dark hover:text-white shadow-lg"
             onClick={goToNext}
-            disabled={totalPages <= 1}
+            disabled={totalItems <= itemsPerPage}
           >
             <ChevronRight className="h-5 w-5" />
           </Button>
@@ -141,7 +142,7 @@ export default function BrandsSection() {
 
           {/* Page Indicators */}
           <div className="flex justify-center mt-8 space-x-2">
-            {Array.from({ length: totalPages }).map((_, index) => (
+            {Array.from({ length: totalItems - itemsPerPage + 1 }).map((_, index) => (
               <button
                 key={index}
                 className={`w-3 h-3 rounded-full transition-all duration-300 ${
