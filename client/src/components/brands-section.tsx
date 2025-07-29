@@ -13,38 +13,6 @@ export default function BrandsSection() {
   const allBrands = [
     {
       id: 1,
-      name: "Nyline",
-      description: "Explore our range of premium Nylon rope technologies",
-      buttonText: "Find Nylon ropes",
-      imageUrl: nylineImage,
-      buttonAction: () => console.log("Navigate to nylon ropes")
-    },
-    {
-      id: 2,
-      name: "Esterline",
-      description: "Explore our range of Polyester rope technologies",
-      buttonText: "Find Polyester ropes",
-      imageUrl: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&h=250&fit=crop&crop=center",
-      buttonAction: () => console.log("Navigate to polyester ropes")
-    },
-    {
-      id: 3,
-      name: "Terypro",
-      description: "Explore our Polyester Compound Technologies",
-      buttonText: "Find Polyester compounds",
-      imageUrl: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=400&h=250&fit=crop&crop=center",
-      buttonAction: () => console.log("Navigate to polyester compounds")
-    },
-    {
-      id: 4,
-      name: "Danline",
-      description: "Explore our range of Polypropylene Danline rope technologies",
-      buttonText: "Find Danline ropes",
-      imageUrl: "https://images.unsplash.com/photo-1569163139394-de4e4f43e4e3?w=400&h=250&fit=crop&crop=center",
-      buttonAction: () => console.log("Navigate to danline ropes")
-    },
-    {
-      id: 5,
       name: "Manila",
       description: "Explore our range of Manila rope technologies",
       buttonText: "Find Manila ropes",
@@ -52,20 +20,44 @@ export default function BrandsSection() {
       buttonAction: () => console.log("Navigate to manila ropes")
     },
     {
-      id: 6,
-      name: "Marine Solutions Pro",
-      description: "Specialized marine rope systems designed for harsh oceanic conditions and commercial vessels.",
-      buttonText: "Marine catalog",
-      imageUrl: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400&h=250&fit=crop&crop=center",
-      buttonAction: () => console.log("Navigate to marine")
-    },
-    {
-      id: 7,
+      id: 2,
       name: "Skyline",
       description: "Explore our range of Polypropylene Monofilament rope technologies",
       buttonText: "View Skyline products",
       imageUrl: skylineImage,
       buttonAction: () => console.log("Navigate to skyline")
+    },
+    {
+      id: 3,
+      name: "Danline",
+      description: "Explore our range of Polypropylene Danline rope technologies",
+      buttonText: "Find Danline ropes",
+      imageUrl: "https://images.unsplash.com/photo-1569163139394-de4e4f43e4e3?w=400&h=250&fit=crop&crop=center",
+      buttonAction: () => console.log("Navigate to danline ropes")
+    },
+    {
+      id: 4,
+      name: "Nyline",
+      description: "Explore our range of premium Nylon rope technologies",
+      buttonText: "Find Nylon ropes",
+      imageUrl: nylineImage,
+      buttonAction: () => console.log("Navigate to nylon ropes")
+    },
+    {
+      id: 5,
+      name: "Esterline",
+      description: "Explore our range of Polyester rope technologies",
+      buttonText: "Find Polyester ropes",
+      imageUrl: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&h=250&fit=crop&crop=center",
+      buttonAction: () => console.log("Navigate to polyester ropes")
+    },
+    {
+      id: 6,
+      name: "Terypro",
+      description: "Explore our Polyester Compound Technologies",
+      buttonText: "Find Polyester compounds",
+      imageUrl: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=400&h=250&fit=crop&crop=center",
+      buttonAction: () => console.log("Navigate to polyester compounds")
     }
   ];
 
