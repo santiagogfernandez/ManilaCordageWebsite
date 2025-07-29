@@ -45,11 +45,11 @@ export default function BrandsSection() {
     },
     {
       id: 5,
-      name: "Industrial Chain & Wire",
-      description: "Heavy-duty chains and wire rope assemblies for construction and lifting applications.",
-      buttonText: "View chain products",
+      name: "Manila",
+      description: "Explore our range of Manila rope technologies",
+      buttonText: "Find Manila ropes",
       imageUrl: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=400&h=250&fit=crop&crop=center",
-      buttonAction: () => console.log("Navigate to chains")
+      buttonAction: () => console.log("Navigate to manila ropes")
     },
     {
       id: 6,
