@@ -30,20 +30,13 @@ export default function ProductsSection() {
     if (activeFilter === "all") return true;
     if (activeFilter === "natural") return product.name.toLowerCase().includes("manila");
     if (activeFilter === "synthetic") return !product.name.toLowerCase().includes("manila");
-    if (activeFilter === "manila") return product.name.toLowerCase().includes("manila");
-    if (activeFilter === "steel") return product.name.toLowerCase().includes("steel") || product.name.toLowerCase().includes("wire");
-    if (activeFilter === "marine") return product.category === "marine";
-    if (activeFilter === "industrial") return product.category === "industrial";
     return false;
   }) || [];
 
   const filters = [
     { key: "all", label: "All Products" },
-    { key: "manila", label: "Manila Rope" },
-    { key: "synthetic", label: "Synthetic Rope" },
-    { key: "steel", label: "Steel Wire Rope" },
-    { key: "marine", label: "Marine Rope" },
-    { key: "industrial", label: "Industrial Rope" },
+    { key: "natural", label: "Natural Fiber Products" },
+    { key: "synthetic", label: "Synthetic Fiber Products" },
   ];
 
   const getCategoryColor = (category: string) => {
