@@ -23,7 +23,7 @@ export default function BrandsSection() {
       id: 2,
       name: "Skyline",
       description: "Explore our range of Polypropylene Monofilament rope technologies",
-      buttonText: "View Skyline products",
+      buttonText: "View Skyline ropes",
       imageUrl: skylineImage,
       buttonAction: () => console.log("Navigate to skyline")
     },
