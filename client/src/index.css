@@ -28,6 +28,7 @@
   --navy-dark: hsl(210, 40%, 18%);
   --navy-light: hsl(210, 20%, 25%);
   --accent-blue: hsl(199, 89%, 48%);
+  --orange-accent: hsl(25, 95%, 53%);
   --text-light: hsl(215, 16%, 47%);
   --gray-50: hsl(210, 40%, 98%);
 }
@@ -95,6 +96,14 @@
   
   .bg-navy-dark {
     background-color: var(--navy-dark);
+  }
+
+  .orange-accent {
+    color: var(--orange-accent);
+  }
+
+  .bg-orange-accent {
+    background-color: var(--orange-accent);
   }
   
   .navy-light {
