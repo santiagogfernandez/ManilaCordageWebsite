@@ -132,9 +132,13 @@ export default function ProductsSection() {
                     {(() => {
                       const brandNames = ["Manila", "Skyline", "Danline", "Nyline", "Esterline", "Terypro"];
                       const currentBrand = brandNames[index % brandNames.length];
-                      return currentBrand === "Skyline" 
-                        ? "Ultra‑Light, UV‑Stable Polypropylene Rope Built for the Elements"
-                        : "Premium Natural Manila Rope for Industrial Strength & Resilience";
+                      if (currentBrand === "Skyline") {
+                        return "Ultra‑Light, UV‑Stable Polypropylene Rope Built for the Elements";
+                      } else if (currentBrand === "Nyline") {
+                        return "High‑Strength Nylon Rope Engineered for Heavy-Duty Load Protection";
+                      } else {
+                        return "Premium Natural Manila Rope for Industrial Strength & Resilience";
+                      }
                     })()}
                   </p>
 
