@@ -138,6 +138,8 @@ export default function ProductsSection() {
                         return "High‑Strength Nylon Rope Engineered for Heavy-Duty Load Protection";
                       } else if (currentBrand === "Terypro") {
                         return "The Best of Polypropylene & Polyester";
+                      } else if (currentBrand === "Esterline") {
+                        return "Resilient Polyester Rope for Stability & Low Stretch";
                       } else {
                         return "Premium Natural Manila Rope for Industrial Strength & Resilience";
                       }
