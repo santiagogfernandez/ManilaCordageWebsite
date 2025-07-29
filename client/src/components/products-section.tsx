@@ -106,7 +106,7 @@ export default function ProductsSection() {
                 />
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold text-navy-dark mb-2">
-                    {product.name}
+                    Manila Rope
                   </h3>
                   <p className="text-text-light mb-4">
                     {product.description}
