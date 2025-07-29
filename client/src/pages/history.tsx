@@ -3,6 +3,7 @@ import { useLanguage } from "@/hooks/use-language";
 import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
 import { Card, CardContent } from "@/components/ui/card";
+import historicalPhoto from "@assets/MCCHistory2_1753799033849.jpg";
 import modernPhoto from "@assets/MCC MSI Group_1753799439492.jpg";
 
 interface TimelineEvent {
@@ -23,7 +24,7 @@ export default function History() {
       title: "Founding Years",
       description: "On February 20, 1924, Manila Cordage Company, a subsidiary of Tubbs Cordage Company of San Francisco, began operations at the junction of Cristobal and Otis streets in Paco, which had easy access to the Pasig. Its basic raw material was abaca, also known as Manila hemp, which by then was a much sought after commodity in North America.",
       milestone: true,
-      image: modernPhoto
+      image: historicalPhoto
     },
     {
       year: "1950s",
@@ -114,8 +115,13 @@ export default function History() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="bg-navy-dark text-white py-16 sm:py-24">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <section 
+        className="relative bg-navy-dark text-white py-16 sm:py-24 bg-cover bg-center bg-no-repeat"
+        style={{ 
+          backgroundImage: `linear-gradient(rgba(28, 42, 70, 0.85), rgba(28, 42, 70, 0.85)), url(${modernPhoto})` 
+        }}
+      >
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
               Our History
