@@ -106,7 +106,10 @@ export default function ProductsSection() {
                 />
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold text-navy-dark mb-2">
-                    {index === 0 ? "Manila Rope" : "Polypropylene Rope"}
+                    {(() => {
+                      const brandNames = ["Manila", "Skyline", "Danline", "Nyline", "Esterline", "Terypro"];
+                      return brandNames[index % brandNames.length];
+                    })()}
                   </h3>
                   <p className="text-text-light mb-4">
                     Premium Natural Manila Rope for Industrial Strength & Resilience
