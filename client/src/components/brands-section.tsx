@@ -29,11 +29,11 @@ export default function BrandsSection() {
     },
     {
       id: 3,
-      name: "Ropes 360®",
-      description: "Our innovative services offerings ensure your ropes are fit for purpose and safe for in-service use.",
-      buttonText: "Explore our services",
+      name: "Terypro",
+      description: "Explore our Polyester Compound Technologies",
+      buttonText: "Find Polyester compounds",
       imageUrl: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=400&h=250&fit=crop&crop=center",
-      buttonAction: () => console.log("Navigate to services")
+      buttonAction: () => console.log("Navigate to polyester compounds")
     },
     {
       id: 4,
