@@ -21,11 +21,11 @@ export default function BrandsSection() {
     },
     {
       id: 2,
-      name: "Bexco® Synthetic Fibre Ropes",
-      description: "Explore our innovative synthetic fibre rope solutions.",
-      buttonText: "Find a Synthetic Rope",
+      name: "Esterline",
+      description: "Explore our range of Polyester rope technologies",
+      buttonText: "Find Polyester ropes",
       imageUrl: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&h=250&fit=crop&crop=center",
-      buttonAction: () => console.log("Navigate to synthetic ropes")
+      buttonAction: () => console.log("Navigate to polyester ropes")
     },
     {
       id: 3,
