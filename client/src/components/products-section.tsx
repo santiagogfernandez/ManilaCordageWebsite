@@ -134,17 +134,31 @@ export default function ProductsSection() {
         </div>
 
         <div className="text-center mt-12">
-          <h3 className="text-2xl font-bold text-navy-dark mb-6">
-            Need a custom solution?
+          <h3 className="text-3xl font-bold text-navy-dark mb-4">
+            Manila Rope
           </h3>
-          <Link href="/custom-quote">
-            <Button 
-              size="lg"
-              className="bg-orange-accent hover:bg-orange-accent/90 text-white px-8 py-4 font-semibold transition-all"
-            >
-              Custom Quote
-            </Button>
-          </Link>
+          <p className="text-lg text-text-light mb-8 max-w-2xl mx-auto">
+            Premium Natural Manila Rope for Industrial Strength & Resilience
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/manila-rope">
+              <Button 
+                size="lg"
+                variant="outline"
+                className="border-navy-dark text-navy-dark hover:bg-navy-dark hover:text-white px-8 py-4 font-semibold transition-all"
+              >
+                Learn More
+              </Button>
+            </Link>
+            <Link href="/manila-rope-quote">
+              <Button 
+                size="lg"
+                className="bg-orange-accent hover:bg-orange-accent/90 text-white px-8 py-4 font-semibold transition-all"
+              >
+                Request Quote
+              </Button>
+            </Link>
+          </div>
         </div>
       </div>
     </section>
