@@ -7,6 +7,7 @@ import { LanguageProvider } from "@/hooks/use-language";
 import Home from "@/pages/home";
 import Products from "@/pages/products";
 import About from "@/pages/about";
+import History from "./pages/history";
 import Resources from "@/pages/resources";
 import Contact from "@/pages/contact";
 import NotFound from "@/pages/not-found";
@@ -17,6 +18,7 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/products" component={Products} />
       <Route path="/about" component={About} />
+      <Route path="/about/history" component={History} />
       <Route path="/resources" component={Resources} />
       <Route path="/contact" component={Contact} />
       <Route component={NotFound} />
