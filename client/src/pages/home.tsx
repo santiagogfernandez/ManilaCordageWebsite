@@ -3,7 +3,7 @@ import Navigation from "@/components/navigation";
 import HeroSection from "@/components/hero-section";
 import StatsSection from "@/components/stats-section";
 import BrandsSection from "@/components/brands-section";
-import ProductsSection from "@/components/products-section";
+
 import QuoteSection from "@/components/quote-section";
 import AboutSection from "@/components/about-section";
 import ResourcesSection from "@/components/resources-section";
@@ -42,7 +42,6 @@ export default function Home() {
       <HeroSection />
       <StatsSection />
       <BrandsSection />
-      <ProductsSection />
       <QuoteSection />
       <AboutSection />
       <ResourcesSection />
