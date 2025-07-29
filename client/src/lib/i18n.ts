@@ -75,7 +75,7 @@ export const translations = {
       news: "News",
       contact: "Contact",
       contactInfo: "Contact Info",
-      copyright: "© 2024 Manila Cordage. All rights reserved.",
+      copyright: "© 2001 Manila Cordage. All rights reserved.",
       privacy: "Privacy Policy",
       terms: "Terms of Service",
       sitemap: "Sitemap"
