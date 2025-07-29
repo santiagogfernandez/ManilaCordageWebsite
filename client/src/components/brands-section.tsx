@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useLanguage } from "@/hooks/use-language";
+import { Link } from "wouter";
 import skylineImage from "@assets/SkylineNew-a_1753734287907.jpg";
 import nylineImage from "@assets/nyline-rope.jpg";
 
@@ -17,15 +18,15 @@ export default function BrandsSection() {
       description: "Explore our range of Manila rope technologies",
       buttonText: "View Manila ropes",
       imageUrl: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=400&h=250&fit=crop&crop=center",
-      buttonAction: () => console.log("Navigate to manila ropes")
+      buttonPath: "/products/manila-rope"
     },
     {
       id: 2,
       name: "Skyline",
-      description: "Explore our range of Polypropylene Monofilament rope technologies",
+      description: "Ultra‑Light, UV‑Stable Polypropylene Rope Built for the Elements",
       buttonText: "View Skyline ropes",
       imageUrl: skylineImage,
-      buttonAction: () => console.log("Navigate to skyline")
+      buttonPath: "/products/skyline-rope"
     },
     {
       id: 3,
@@ -33,7 +34,7 @@ export default function BrandsSection() {
       description: "Explore our range of Polypropylene Danline rope technologies",
       buttonText: "View Danline ropes",
       imageUrl: "https://images.unsplash.com/photo-1569163139394-de4e4f43e4e3?w=400&h=250&fit=crop&crop=center",
-      buttonAction: () => console.log("Navigate to danline ropes")
+      buttonPath: "/products/danline-rope"
     },
     {
       id: 4,
@@ -41,7 +42,7 @@ export default function BrandsSection() {
       description: "Explore our range of premium Nylon rope technologies",
       buttonText: "View Nyline ropes",
       imageUrl: nylineImage,
-      buttonAction: () => console.log("Navigate to nylon ropes")
+      buttonPath: "/products/nyline-rope"
     },
     {
       id: 5,
@@ -49,7 +50,7 @@ export default function BrandsSection() {
       description: "Explore our range of Polyester rope technologies",
       buttonText: "View Esterline ropes",
       imageUrl: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&h=250&fit=crop&crop=center",
-      buttonAction: () => console.log("Navigate to polyester ropes")
+      buttonPath: "/products/esterline-rope"
     },
     {
       id: 6,
@@ -57,7 +58,7 @@ export default function BrandsSection() {
       description: "Explore our Polyester Compound Technologies",
       buttonText: "View Terypro ropes",
       imageUrl: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=400&h=250&fit=crop&crop=center",
-      buttonAction: () => console.log("Navigate to polyester compounds")
+      buttonPath: "/products/terypro-rope"
     }
   ];
 
@@ -127,13 +128,14 @@ export default function BrandsSection() {
                     <p className="text-text-light mb-6 leading-relaxed">
                       {brand.description}
                     </p>
-                    <Button 
-                      variant="outline"
-                      className="border-navy-dark text-navy-dark hover:bg-navy-dark hover:text-white font-medium px-6 py-2 rounded-full transition-all duration-300"
-                      onClick={brand.buttonAction}
-                    >
-                      {brand.buttonText}
-                    </Button>
+                    <Link href={brand.buttonPath}>
+                      <Button 
+                        variant="outline"
+                        className="border-navy-dark text-navy-dark hover:bg-navy-dark hover:text-white font-medium px-6 py-2 rounded-full transition-all duration-300"
+                      >
+                        {brand.buttonText}
+                      </Button>
+                    </Link>
                   </CardContent>
                 </Card>
               ))}

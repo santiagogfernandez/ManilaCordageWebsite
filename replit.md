@@ -37,16 +37,18 @@ The application uses Drizzle ORM with PostgreSQL dialect and includes three main
 ### Core Features
 1. **Homepage**: Modern landing page with hero section, company stats, and navigation
 2. **Product Catalog**: Searchable and filterable product listings with detailed specifications
-3. **Quote Request System**: Form-based quote requests with file upload capabilities
-4. **Resource Center**: Downloadable technical documents and guides
-5. **Multi-language Support**: English + additional language with i18n implementation
-6. **Live Chat Widget**: Customer support integration
-7. **SEO Optimization**: Meta tags, structured URLs, and search engine friendly content
+3. **Product Subpages**: Individual brand pages for Manila, Skyline, Danline, Nyline, Esterline, and Terypro ropes
+4. **Quote Request System**: Form-based quote requests with file upload capabilities
+5. **Resource Center**: Downloadable technical documents and guides
+6. **Multi-language Support**: English + additional language with i18n implementation
+7. **Live Chat Widget**: Customer support integration
+8. **SEO Optimization**: Meta tags, structured URLs, and search engine friendly content
 
 ### UI/UX Components
-- Responsive navigation with mobile menu
+- Responsive navigation with mobile menu and product dropdown
 - Hero section with call-to-action buttons
 - Product filtering and search functionality
+- Brand carousel with navigation to dedicated product pages
 - Interactive quote request forms
 - Chat widget for customer support
 - Footer with company information and social links
@@ -57,6 +59,8 @@ The application uses Drizzle ORM with PostgreSQL dialect and includes three main
 - **Form Validation**: Zod schemas for type-safe form validation
 - **Query Client**: Centralized data fetching and caching
 - **Language Context**: React context for internationalization
+- **Product Routing**: Dynamic routing system for 6 brand-specific pages
+- **Navigation Dropdowns**: Desktop and mobile navigation with product submenus
 
 ## Data Flow
 

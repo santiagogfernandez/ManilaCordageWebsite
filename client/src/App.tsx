@@ -12,12 +12,24 @@ import Resources from "@/pages/resources";
 import Contact from "@/pages/contact";
 import CustomQuote from "@/pages/custom-quote";
 import NotFound from "@/pages/not-found";
+import ManilaRope from "@/pages/products/manila-rope";
+import SkylineRope from "@/pages/products/skyline-rope";
+import DanlineRope from "@/pages/products/danline-rope";
+import NylineRope from "@/pages/products/nyline-rope";
+import EsterlineRope from "@/pages/products/esterline-rope";
+import TeryproRope from "@/pages/products/terypro-rope";
 
 function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/products" component={Products} />
+      <Route path="/products/manila-rope" component={ManilaRope} />
+      <Route path="/products/skyline-rope" component={SkylineRope} />
+      <Route path="/products/danline-rope" component={DanlineRope} />
+      <Route path="/products/nyline-rope" component={NylineRope} />
+      <Route path="/products/esterline-rope" component={EsterlineRope} />
+      <Route path="/products/terypro-rope" component={TeryproRope} />
       <Route path="/about" component={About} />
       <Route path="/about/history" component={History} />
       <Route path="/resources" component={Resources} />

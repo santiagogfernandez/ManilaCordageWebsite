@@ -25,6 +25,15 @@ export default function Navigation() {
     { key: 'careers', path: '/about/careers', label: t('nav.careers') },
   ];
 
+  const productSubItems = [
+    { key: 'manila', label: 'Manila Rope', path: '/products/manila-rope' },
+    { key: 'skyline', label: 'Skyline Rope', path: '/products/skyline-rope' },
+    { key: 'danline', label: 'Danline Rope', path: '/products/danline-rope' },
+    { key: 'nyline', label: 'Nyline Rope', path: '/products/nyline-rope' },
+    { key: 'esterline', label: 'Esterline Rope', path: '/products/esterline-rope' },
+    { key: 'terypro', label: 'Terypro Rope', path: '/products/terypro-rope' }
+  ];
+
   return (
     <header className="bg-white text-navy-dark sticky top-0 z-50 shadow-sm border-b border-gray-200">
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8 py-3 sm:py-4">
@@ -40,17 +49,60 @@ export default function Navigation() {
 
           {/* Desktop Navigation - Hidden on mobile and tablet */}
           <div className="hidden lg:flex items-center space-x-4 xl:space-x-6 flex-1 justify-end">
-            {navItems.map((item) => (
-              <Link
-                key={item.key}
-                href={item.path}
-                className={`text-navy-dark hover:text-orange-accent transition-colors font-medium text-sm xl:text-base whitespace-nowrap ${
-                  location === item.path ? 'text-orange-accent' : ''
-                }`}
-              >
-                {t(`nav.${item.key}`)}
-              </Link>
-            ))}
+            {navItems.map((item) => {
+              if (item.key === 'products') {
+                return (
+                  <DropdownMenu key={item.key}>
+                    <DropdownMenuTrigger asChild>
+                      <Button 
+                        variant="ghost" 
+                        className={`text-navy-dark hover:text-orange-accent transition-colors font-medium text-sm xl:text-base whitespace-nowrap p-0 h-auto ${
+                          location.startsWith('/products') ? 'text-orange-accent' : ''
+                        }`}
+                      >
+                        {t(`nav.${item.key}`)}
+                        <ChevronDown className="h-4 w-4 ml-1" />
+                      </Button>
+                    </DropdownMenuTrigger>
+                    <DropdownMenuContent>
+                      <DropdownMenuItem asChild>
+                        <Link
+                          href="/products"
+                          className={`w-full cursor-pointer ${
+                            location === '/products' ? 'text-orange-accent' : ''
+                          }`}
+                        >
+                          All Products
+                        </Link>
+                      </DropdownMenuItem>
+                      {productSubItems.map((subItem) => (
+                        <DropdownMenuItem key={subItem.key} asChild>
+                          <Link
+                            href={subItem.path}
+                            className={`w-full cursor-pointer ${
+                              location === subItem.path ? 'text-orange-accent' : ''
+                            }`}
+                          >
+                            {subItem.label}
+                          </Link>
+                        </DropdownMenuItem>
+                      ))}
+                    </DropdownMenuContent>
+                  </DropdownMenu>
+                );
+              }
+              return (
+                <Link
+                  key={item.key}
+                  href={item.path}
+                  className={`text-navy-dark hover:text-orange-accent transition-colors font-medium text-sm xl:text-base whitespace-nowrap ${
+                    location === item.path ? 'text-orange-accent' : ''
+                  }`}
+                >
+                  {t(`nav.${item.key}`)}
+                </Link>
+              );
+            })}
 
             {/* About Us Dropdown */}
             <DropdownMenu>
@@ -140,17 +192,46 @@ export default function Navigation() {
               <SheetContent side="right" className="bg-white border-gray-200 w-80">
                 <div className="flex flex-col space-y-4 mt-8">
                   <h2 className="text-lg font-semibold text-navy-dark mb-4">Navigation</h2>
-                  {navItems.map((item) => (
-                    <Link
-                      key={item.key}
-                      href={item.path}
-                      className={`text-navy-dark hover:text-orange-accent transition-colors text-left py-2 text-base font-medium ${
-                        location === item.path ? 'text-orange-accent' : ''
-                      }`}
-                    >
-                      {t(`nav.${item.key}`)}
-                    </Link>
-                  ))}
+                  {navItems.map((item) => {
+                    if (item.key === 'products') {
+                      return (
+                        <div key={item.key}>
+                          <Link
+                            href={item.path}
+                            className={`text-navy-dark hover:text-orange-accent transition-colors text-left py-2 text-base font-medium block ${
+                              location === item.path ? 'text-orange-accent' : ''
+                            }`}
+                          >
+                            {t(`nav.${item.key}`)}
+                          </Link>
+                          <div className="space-y-1 pl-4 mt-2">
+                            {productSubItems.map((subItem) => (
+                              <Link
+                                key={subItem.key}
+                                href={subItem.path}
+                                className={`text-navy-dark hover:text-orange-accent transition-colors text-left py-1 text-sm font-medium block ${
+                                  location === subItem.path ? 'text-orange-accent' : ''
+                                }`}
+                              >
+                                {subItem.label}
+                              </Link>
+                            ))}
+                          </div>
+                        </div>
+                      );
+                    }
+                    return (
+                      <Link
+                        key={item.key}
+                        href={item.path}
+                        className={`text-navy-dark hover:text-orange-accent transition-colors text-left py-2 text-base font-medium ${
+                          location === item.path ? 'text-orange-accent' : ''
+                        }`}
+                      >
+                        {t(`nav.${item.key}`)}
+                      </Link>
+                    );
+                  })}
                   
                   {/* About Us Section */}
                   <div className="border-t border-gray-200 pt-4">
@@ -192,17 +273,46 @@ export default function Navigation() {
               <SheetContent side="right" className="bg-white border-gray-200">
                 <div className="flex flex-col space-y-4 mt-8">
                   <h2 className="text-lg font-semibold text-navy-dark mb-4">Menu</h2>
-                  {navItems.map((item) => (
-                    <Link
-                      key={item.key}
-                      href={item.path}
-                      className={`text-navy-dark hover:text-orange-accent transition-colors text-left py-3 text-base font-medium border-b border-gray-100 block ${
-                        location === item.path ? 'text-orange-accent' : ''
-                      }`}
-                    >
-                      {t(`nav.${item.key}`)}
-                    </Link>
-                  ))}
+                  {navItems.map((item) => {
+                    if (item.key === 'products') {
+                      return (
+                        <div key={item.key} className="border-b border-gray-100">
+                          <Link
+                            href={item.path}
+                            className={`text-navy-dark hover:text-orange-accent transition-colors text-left py-3 text-base font-medium block ${
+                              location === item.path ? 'text-orange-accent' : ''
+                            }`}
+                          >
+                            {t(`nav.${item.key}`)}
+                          </Link>
+                          <div className="pl-4 pb-2">
+                            {productSubItems.map((subItem) => (
+                              <Link
+                                key={subItem.key}
+                                href={subItem.path}
+                                className={`text-navy-dark hover:text-orange-accent transition-colors text-left py-2 text-sm font-medium block ${
+                                  location === subItem.path ? 'text-orange-accent' : ''
+                                }`}
+                              >
+                                {subItem.label}
+                              </Link>
+                            ))}
+                          </div>
+                        </div>
+                      );
+                    }
+                    return (
+                      <Link
+                        key={item.key}
+                        href={item.path}
+                        className={`text-navy-dark hover:text-orange-accent transition-colors text-left py-3 text-base font-medium border-b border-gray-100 block ${
+                          location === item.path ? 'text-orange-accent' : ''
+                        }`}
+                      >
+                        {t(`nav.${item.key}`)}
+                      </Link>
+                    );
+                  })}
                   
                   {/* About Us Section */}
                   <div className="border-b border-gray-100">
