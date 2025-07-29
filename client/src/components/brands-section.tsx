@@ -39,7 +39,7 @@ export default function BrandsSection() {
       id: 4,
       name: "Nyline",
       description: "Explore our range of premium Nylon rope technologies",
-      buttonText: "Find Nylon ropes",
+      buttonText: "View Nyline ropes",
       imageUrl: nylineImage,
       buttonAction: () => console.log("Navigate to nylon ropes")
     },
