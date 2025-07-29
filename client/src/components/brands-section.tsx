@@ -47,7 +47,7 @@ export default function BrandsSection() {
       id: 5,
       name: "Esterline",
       description: "Explore our range of Polyester rope technologies",
-      buttonText: "Find Polyester ropes",
+      buttonText: "View Esterline ropes",
       imageUrl: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&h=250&fit=crop&crop=center",
       buttonAction: () => console.log("Navigate to polyester ropes")
     },
@@ -55,7 +55,7 @@ export default function BrandsSection() {
       id: 6,
       name: "Terypro",
       description: "Explore our Polyester Compound Technologies",
-      buttonText: "Find Polyester compounds",
+      buttonText: "View Terypro ropes",
       imageUrl: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=400&h=250&fit=crop&crop=center",
       buttonAction: () => console.log("Navigate to polyester compounds")
     }
