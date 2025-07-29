@@ -15,15 +15,17 @@ export default function ProductsSection() {
     queryKey: ["/api/products"],
   });
 
-  const filteredProducts = products?.filter(product => 
-    activeFilter === "all" || product.category === activeFilter
-  ) || [];
+  const filteredProducts = products?.filter(product => {
+    if (activeFilter === "all") return true;
+    if (activeFilter === "natural") return product.name.toLowerCase().includes("manila");
+    if (activeFilter === "synthetic") return !product.name.toLowerCase().includes("manila");
+    return false;
+  }) || [];
 
   const filters = [
-    { key: "all", label: t('filters.all') },
-    { key: "marine", label: t('filters.marine') },
-    { key: "industrial", label: t('filters.industrial') },
-    { key: "construction", label: t('filters.construction') },
+    { key: "all", label: "All Products" },
+    { key: "natural", label: "Natural Fiber" },
+    { key: "synthetic", label: "Synthetic Fiber" },
   ];
 
   const getCategoryColor = (category: string) => {
