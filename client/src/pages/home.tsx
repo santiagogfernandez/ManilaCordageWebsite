@@ -42,6 +42,10 @@ export default function Home() {
       <HeroSection />
       <StatsSection />
       <BrandsSection />
+      <ProductsSection />
+      <QuoteSection />
+      <AboutSection />
+      <ResourcesSection />
       <Footer />
       <ChatWidget />
     </div>
