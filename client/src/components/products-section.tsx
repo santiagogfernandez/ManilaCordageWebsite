@@ -95,7 +95,7 @@ export default function ProductsSection() {
               </Card>
             ))
           ) : (
-            filteredProducts.map((product) => (
+            filteredProducts.map((product, index) => (
               <Card 
                 key={product.id} 
                 className="product-card overflow-hidden hover:shadow-xl transition-all duration-300"
@@ -106,7 +106,7 @@ export default function ProductsSection() {
                 />
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold text-navy-dark mb-2">
-                    Polypropylene Rope
+                    {index === 0 ? "Manila Rope" : "Polypropylene Rope"}
                   </h3>
                   <p className="text-text-light mb-4">
                     Premium Natural Manila Rope for Industrial Strength & Resilience
