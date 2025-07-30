@@ -12,7 +12,6 @@ export default function Navigation() {
   const [location] = useLocation();
 
   const navItems = [
-    { key: 'home', path: '/' },
     { key: 'products', path: '/products' },
     { key: 'resources', path: '/resources' },
     { key: 'contact', path: '/contact' },
