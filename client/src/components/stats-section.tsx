@@ -15,7 +15,7 @@ export default function StatsSection() {
     },
     {
       icon: Factory,
-      label: "British manufacturer"
+      label: "Philippines manufacturer"
     },
     {
       icon: Link,
