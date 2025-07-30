@@ -58,12 +58,6 @@ export default function History() {
       title: "Cordage Institute USA Membership",
       description: "Became a proud member of the Cordage Institute USA, joining the leading association for rope and cordage manufacturers.",
       milestone: true
-    },
-    {
-      year: "2018",
-      title: "Technology Innovation Center",
-      description: "Established our Research & Development center, focusing on innovative rope technologies and sustainable manufacturing processes.",
-      milestone: false
     }
   ];
 
