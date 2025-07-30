@@ -83,12 +83,10 @@ export default function ClientBrandsSection() {
     }
   ];
 
-  // Auto-scroll functionality
+  // Auto-scroll functionality with continuous loop
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => 
-        prevIndex >= clientBrands.length - 5 ? 0 : prevIndex + 1
-      );
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % clientBrands.length);
     }, 3000); // Move every 3 seconds
 
     return () => clearInterval(interval);
@@ -107,15 +105,16 @@ export default function ClientBrandsSection() {
           <div 
             className="flex transition-transform duration-1000 ease-in-out"
             style={{ 
-              transform: `translateX(-${currentIndex * (100 / 5)}%)`,
-              width: `${(clientBrands.length / 5) * 100}%`
+              transform: `translateX(-${currentIndex * 20}%)`,
+              width: `${clientBrands.length * 20}%`
             }}
           >
-            {clientBrands.map((brand, index) => (
+            {/* Duplicate brands for seamless loop */}
+            {[...clientBrands, ...clientBrands].map((brand, index) => (
               <div 
                 key={index} 
                 className="flex-shrink-0 px-8 flex items-center justify-center"
-                style={{ width: `${100 / clientBrands.length}%` }}
+                style={{ width: `${100 / (clientBrands.length * 2)}%` }}
               >
                 <div className="h-16 flex items-center justify-center opacity-60 hover:opacity-100 transition-opacity duration-300">
                   {brand.logo}
@@ -127,15 +126,15 @@ export default function ClientBrandsSection() {
 
         {/* Optional: Add dots indicator */}
         <div className="flex justify-center mt-8 space-x-2">
-          {Array.from({ length: Math.ceil(clientBrands.length / 5) }).map((_, index) => (
+          {clientBrands.map((_, index) => (
             <button
               key={index}
               className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                Math.floor(currentIndex / 5) === index 
+                currentIndex % clientBrands.length === index 
                   ? 'bg-navy-dark' 
                   : 'bg-gray-300 hover:bg-gray-400'
               }`}
-              onClick={() => setCurrentIndex(index * 5)}
+              onClick={() => setCurrentIndex(index)}
             />
           ))}
         </div>
