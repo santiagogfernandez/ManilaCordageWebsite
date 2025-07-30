@@ -126,9 +126,7 @@ export default function History() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">Materials That Stand the Test of Time</h1>
-            <p className="text-lg sm:text-xl text-gray-300 mb-8">
-              100+ Years of Quality Rope Making - From 1924 to Today
-            </p>
+            <p className="text-lg sm:text-xl text-gray-300 mb-8">100+ Years of Quality Rope Making</p>
             <div className="w-24 h-1 bg-orange-accent mx-auto"></div>
           </div>
         </div>
