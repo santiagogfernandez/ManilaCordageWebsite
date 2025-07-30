@@ -89,7 +89,7 @@ export default function BrandsSection() {
             Premium Materials, Expertly Crafted
           </h2>
           <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            Manila Cordage uses top-quality materials like Dyneema®, Polyester, Polypropylene, Nylon, and Aramid to ensure exceptional strength and durability. Discover our advanced rope and cord solutions and explore how our craftsmanship meets your needs.
+            Manila Cordage uses top-quality natural and syntehtic rope materials to ensure exceptional strength and durability. Discover our advanced rope and cord solutions and explore how our craftsmanship meets your needs.
           </p>
         </div>
 
