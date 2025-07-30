@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { CheckCircle } from "lucide-react";
 import { useLanguage } from "@/hooks/use-language";
+import factoryImage from "/images/manila-cordage-factory-1924.jpg";
 
 
 export default function AboutSection() {
@@ -21,9 +22,15 @@ export default function AboutSection() {
             {/* Left side - Image with overlay */}
             <div className="relative h-96 lg:h-auto overflow-hidden rounded-l-2xl lg:rounded-l-2xl lg:rounded-r-none">
               <img 
-                src="/attached_assets/MCCHistory2_1753799033849.jpg" 
+                src={factoryImage} 
                 alt="Manila Cordage factory in 1924"
                 className="absolute inset-0 w-full h-full object-cover"
+                onError={(e) => {
+                  console.error('Image failed to load:', e.target.src);
+                  // Fallback to direct path
+                  e.target.src = "/images/manila-cordage-factory-1924.jpg";
+                }}
+                onLoad={() => console.log('Image loaded successfully')}
               />
               <div className="absolute inset-0 bg-navy-dark bg-opacity-70 flex flex-col justify-end items-start p-8 lg:p-12">
                 <h3 className="text-2xl lg:text-3xl font-bold text-white leading-tight">
