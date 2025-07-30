@@ -76,12 +76,6 @@ export default function History() {
       title: "Sustainability Initiative Launch",
       description: "Launched comprehensive sustainability programs, including eco-friendly materials and responsible sourcing practices.",
       milestone: false
-    },
-    {
-      year: "2025",
-      title: "New Era Of Excellence",
-      description: "Continuing our journey of excellence with over 100+ years of quality rope making heritage and innovation.",
-      milestone: true
     }
   ];
 
