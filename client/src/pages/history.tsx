@@ -27,6 +27,12 @@ export default function History() {
       image: historicalPhoto
     },
     {
+      year: "1941-1945",
+      title: "World War II",
+      description: "In December of 1941, the Pacific War broke out and ravaged the country. For the next three years, the mill was run as a branch of the Tokyo Rope Works and its managers imprisoned at a concentration camp. In early 1945, Manila was liberated and by mid-year, the mill was back in business. The first ropes produced were for the U.S. Army.\n\nBy the late 1950's, the Paco mill was overflowing. Manila itself was getting crowded. Manco had to relocate.",
+      milestone: true
+    },
+    {
       year: "1950s",
       title: "Post-War Expansion",
       description: "Following World War II, Manila Cordage rebuilt and expanded operations, adapting to new technologies while maintaining focus on quality abaca fiber processing.",
