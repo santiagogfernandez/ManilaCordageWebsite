@@ -40,10 +40,10 @@ export default function History() {
       milestone: false
     },
     {
-      year: "1970s",
+      year: "1964-1970s",
       title: "Modernization Era",
-      description: "Invested in modern rope manufacturing equipment and techniques, establishing Manila Cordage as a leader in the Philippine cordage industry.",
-      milestone: false
+      description: "Groundbreaking for the new mill in Makati took place in 1964. A year later, the work was finished; the mill was cited as the \"most modern rope facility in the Far East.\" In 1966, Manila Cordage began the production of large-sized plaited synthetic ropes, the first to do so in the Philippines. The Seventies ushered in a major organization change. A group of Filipino businessmen acquired majority control of the Company. Under the new management team, Manco entered a new growth stage.",
+      milestone: true
     },
     {
       year: "1990s",
