@@ -70,12 +70,6 @@ export default function History() {
       title: "Digital Transformation",
       description: "Implemented advanced digital systems and e-commerce capabilities to better serve our customers worldwide.",
       milestone: false
-    },
-    {
-      year: "2022",
-      title: "Sustainability Initiative Launch",
-      description: "Launched comprehensive sustainability programs, including eco-friendly materials and responsible sourcing practices.",
-      milestone: false
     }
   ];
 
