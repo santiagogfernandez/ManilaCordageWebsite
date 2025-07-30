@@ -163,14 +163,14 @@ export default function History() {
                 }`}
               >
                 <Card className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 min-h-[400px]">
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 min-h-[450px]">
                     {/* Image Section */}
                     {event.image && (
-                      <div className="relative bg-navy-dark overflow-hidden">
+                      <div className="relative bg-gray-100 overflow-hidden flex items-center justify-center">
                         <img 
                           src={event.image} 
                           alt={`${event.title} - ${event.year}`}
-                          className="w-full h-full object-cover"
+                          className="w-full h-full object-contain"
                         />
 
                         {/* Year Badge on Image */}
