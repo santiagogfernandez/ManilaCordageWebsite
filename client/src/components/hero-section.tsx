@@ -32,14 +32,14 @@ export default function HeroSection() {
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center max-w-md sm:max-w-none mx-auto">
           <Button 
             size="lg"
-            className="bg-accent-blue hover:bg-blue-600 text-white px-6 sm:px-8 py-3 sm:py-4 font-semibold transition-all transform hover:scale-105 w-full sm:w-auto text-base sm:text-lg touch-button"
+            className="hover:bg-blue-600 text-white px-6 sm:px-8 py-3 sm:py-4 font-semibold transition-all transform hover:scale-105 w-full sm:w-auto text-base sm:text-lg touch-button bg-[#006dd1]"
             onClick={() => setLocation('/products')}
           >
             {t('hero.cta1')}
           </Button>
           <Button 
             size="lg"
-            className="bg-accent-blue hover:bg-blue-600 text-white px-6 sm:px-8 py-3 sm:py-4 font-semibold transition-all transform hover:scale-105 w-full sm:w-auto text-base sm:text-lg touch-button"
+            className="hover:bg-blue-600 text-white px-6 sm:px-8 py-3 sm:py-4 font-semibold transition-all transform hover:scale-105 w-full sm:w-auto text-base sm:text-lg touch-button bg-[#006dd1]"
             onClick={() => scrollToSection('quote')}
           >
             {t('hero.cta2')}
