@@ -3,7 +3,7 @@ import Navigation from "@/components/navigation";
 import HeroSection from "@/components/hero-section";
 import StatsSection from "@/components/stats-section";
 import BrandsSection from "@/components/brands-section";
-
+import ClientBrandsSection from "@/components/client-brands-section";
 
 import AboutSection from "@/components/about-section";
 
@@ -43,6 +43,7 @@ export default function Home() {
       <StatsSection />
       <AboutSection />
       <BrandsSection />
+      <ClientBrandsSection />
       <Footer />
       <ChatWidget />
     </div>
