@@ -49,7 +49,7 @@ export default function History() {
     },
     {
       year: "2001",
-      title: "New Millennium Growth",
+      title: "A Century of Craftsmanship, A Future of Possibility",
       description: "Entered the 21st century with renewed focus on quality manufacturing, establishing modern facilities and embracing technological advances.",
       milestone: false
     },
