@@ -156,7 +156,7 @@ export default function Navigation() {
             {/* Get Quote Button */}
             <Link
               href="/contact"
-              className="bg-orange-accent hover:bg-orange-accent/90 text-white px-3 xl:px-4 py-2 rounded-lg transition-colors font-medium text-sm xl:text-base whitespace-nowrap"
+              className="bg-accent-blue hover:bg-blue-600 text-white px-3 xl:px-4 py-2 rounded-lg transition-colors font-medium text-sm xl:text-base whitespace-nowrap"
             >
               {t('nav.quote')}
             </Link>
@@ -259,7 +259,7 @@ export default function Navigation() {
           <div className="flex md:hidden items-center space-x-2">
             <Link
               href="/contact"
-              className="bg-orange-accent hover:bg-orange-accent/90 text-white px-3 py-1.5 rounded-md transition-colors font-medium text-xs"
+              className="bg-accent-blue hover:bg-blue-600 text-white px-3 py-1.5 rounded-md transition-colors font-medium text-xs"
             >
               Quote
             </Link>
@@ -363,7 +363,7 @@ export default function Navigation() {
                   <div className="pt-4">
                     <Link
                       href="/contact"
-                      className="w-full bg-orange-accent hover:bg-orange-accent/90 text-white px-4 py-3 rounded-lg transition-colors font-medium block text-center"
+                      className="w-full bg-accent-blue hover:bg-blue-600 text-white px-4 py-3 rounded-lg transition-colors font-medium block text-center"
                     >
                       {t('nav.quote')}
                     </Link>
