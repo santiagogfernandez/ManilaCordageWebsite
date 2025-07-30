@@ -120,7 +120,6 @@ export default function History() {
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
-      
       {/* Hero Section */}
       <section 
         className="relative bg-navy-dark text-white py-16 sm:py-24 bg-cover bg-center bg-no-repeat"
@@ -140,7 +139,6 @@ export default function History() {
           </div>
         </div>
       </section>
-
       {/* Timeline Section */}
       <section className="py-16 sm:py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -177,11 +175,7 @@ export default function History() {
                         <div className="absolute inset-0 bg-navy-dark bg-opacity-20"></div>
                         {/* Year Badge on Image */}
                         <div className="absolute top-6 left-6">
-                          <span className={`inline-block px-4 py-2 rounded-full text-sm font-bold ${
-                            event.milestone 
-                              ? 'bg-orange-accent text-white shadow-lg' 
-                              : 'bg-navy-dark text-white shadow-lg'
-                          }`}>
+                          <span className="inline-block px-4 py-2 rounded-full text-sm font-bold text-white shadow-lg bg-[#006fd3]">
                             {event.year}
                           </span>
                         </div>
@@ -221,7 +215,6 @@ export default function History() {
           </div>
         </div>
       </section>
-
       {/* Call to Action Section */}
       <section className="bg-gray-50 py-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -249,7 +242,6 @@ export default function History() {
           </div>
         </div>
       </section>
-
       <Footer />
     </div>
   );
