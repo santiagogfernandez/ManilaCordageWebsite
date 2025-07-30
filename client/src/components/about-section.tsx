@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { CheckCircle } from "lucide-react";
 import { useLanguage } from "@/hooks/use-language";
-import factoryImage from "@assets/MCCHistory2_1753799033849.jpg";
+
 
 export default function AboutSection() {
   const { t } = useLanguage();
@@ -23,7 +23,7 @@ export default function AboutSection() {
               <div 
                 className="absolute inset-0 bg-cover bg-center rounded-l-2xl lg:rounded-l-2xl lg:rounded-r-none"
                 style={{ 
-                  backgroundImage: `url(${factoryImage})`
+                  backgroundImage: `url('/attached_assets/MCCHistory2_1753799033849.jpg')`
                 }}
               />
               <div className="absolute inset-0 bg-navy-dark bg-opacity-70 rounded-l-2xl lg:rounded-l-2xl lg:rounded-r-none flex flex-col justify-end items-start p-8 lg:p-12">
