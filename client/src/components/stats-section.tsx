@@ -7,7 +7,7 @@ export default function StatsSection() {
   const stats = [
     {
       icon: Trophy,
-      label: "Over 57 years experience"
+      label: "+100 years experience"
     },
     {
       icon: Globe,
