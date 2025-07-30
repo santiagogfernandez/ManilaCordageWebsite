@@ -157,6 +157,18 @@ export default function BrandsSection() {
               />
             ))}
           </div>
+
+          {/* View All Products Button */}
+          <div className="flex justify-center mt-8">
+            <Link href="/products">
+              <Button 
+                size="lg"
+                className="bg-accent-blue hover:bg-blue-600 text-white px-8 py-3 font-semibold transition-all duration-300 rounded-lg"
+              >
+                View All Products
+              </Button>
+            </Link>
+          </div>
         </div>
       </div>
     </section>
