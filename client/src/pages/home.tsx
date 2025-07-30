@@ -41,8 +41,8 @@ export default function Home() {
       <Navigation />
       <HeroSection />
       <StatsSection />
-      <BrandsSection />
       <AboutSection />
+      <BrandsSection />
       <Footer />
       <ChatWidget />
     </div>
