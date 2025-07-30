@@ -19,14 +19,13 @@ export default function AboutSection() {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 items-stretch">
             {/* Left side - Image with overlay */}
-            <div className="relative h-96 lg:h-auto">
-              <div 
-                className="absolute inset-0 bg-cover bg-center rounded-l-2xl lg:rounded-l-2xl lg:rounded-r-none"
-                style={{ 
-                  backgroundImage: `url('/attached_assets/MCCHistory2_1753799033849.jpg')`
-                }}
+            <div className="relative h-96 lg:h-auto overflow-hidden rounded-l-2xl lg:rounded-l-2xl lg:rounded-r-none">
+              <img 
+                src="/attached_assets/MCCHistory2_1753799033849.jpg" 
+                alt="Manila Cordage factory in 1924"
+                className="absolute inset-0 w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-navy-dark bg-opacity-70 rounded-l-2xl lg:rounded-l-2xl lg:rounded-r-none flex flex-col justify-end items-start p-8 lg:p-12">
+              <div className="absolute inset-0 bg-navy-dark bg-opacity-70 flex flex-col justify-end items-start p-8 lg:p-12">
                 <h3 className="text-2xl lg:text-3xl font-bold text-white leading-tight">
                   Manila Cordage is a<br />
                   leading Philippines rope<br />
