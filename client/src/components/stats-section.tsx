@@ -1,4 +1,4 @@
-import { Factory, Globe, Settings, Building2 } from "lucide-react";
+import { Trophy, Globe, Factory, Lightbulb, Link } from "lucide-react";
 import { useLanguage } from "@/hooks/use-language";
 
 export default function StatsSection() {
@@ -6,40 +6,39 @@ export default function StatsSection() {
 
   const stats = [
     {
-      icon: Factory,
-      number: "100+",
-      label: t('stats.years')
+      icon: Trophy,
+      label: "Over 57 years experience"
     },
     {
       icon: Globe,
-      number: "50+",
-      label: t('stats.countries')
+      label: "International exports"
     },
     {
-      icon: Settings,
-      number: "ISO",
-      label: t('stats.products')
+      icon: Factory,
+      label: "British manufacturer"
     },
     {
-      icon: Building2,
-      number: "Member",
-      label: t('stats.certified')
+      icon: Lightbulb,
+      label: "We provide solutions"
+    },
+    {
+      icon: Link,
+      label: "Industry leading quality"
     }
   ];
 
   return (
-    <section className="bg-gray-50 py-16">
+    <section className="bg-white border-t border-b border-gray-200 py-8">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+        <div className="flex flex-wrap justify-center items-center gap-8 lg:gap-16">
           {stats.map((stat, index) => {
             const IconComponent = stat.icon;
             return (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-sm flex flex-col items-center">
-                <div className="flex items-center justify-center mb-4">
-                  <IconComponent className="h-12 w-12 text-accent-blue" />
-                </div>
-                <h3 className="text-3xl font-bold text-text-dark mb-2">{stat.number}</h3>
-                <p className="text-text-light text-center">{stat.label}</p>
+              <div key={index} className="flex items-center space-x-3">
+                <IconComponent className="h-8 w-8 text-accent-blue flex-shrink-0" />
+                <span className="text-gray-700 font-medium text-sm lg:text-base whitespace-nowrap">
+                  {stat.label}
+                </span>
               </div>
             );
           })}
