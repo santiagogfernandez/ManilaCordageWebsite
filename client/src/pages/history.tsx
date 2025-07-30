@@ -33,12 +33,7 @@ export default function History() {
       milestone: true,
       image: "/images/manila-cordage-wwii.jpg"
     },
-    {
-      year: "1950s",
-      title: "Post-War Expansion",
-      description: "Following World War II, Manila Cordage rebuilt and expanded operations, adapting to new technologies while maintaining focus on quality abaca fiber processing.",
-      milestone: false
-    },
+
     {
       year: "1964-1970s",
       title: "Modernization Era",
