@@ -64,12 +64,6 @@ export default function History() {
       title: "Technology Innovation Center",
       description: "Established our Research & Development center, focusing on innovative rope technologies and sustainable manufacturing processes.",
       milestone: false
-    },
-    {
-      year: "2020",
-      title: "Digital Transformation",
-      description: "Implemented advanced digital systems and e-commerce capabilities to better serve our customers worldwide.",
-      milestone: false
     }
   ];
 
