@@ -135,9 +135,6 @@ export default function History() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-2xl sm:text-3xl font-bold text-navy-dark mb-4">Discover the milestones that shaped Manila Cordage into the industry leader we are today</h2>
-            <p className="text-lg text-gray-600">
-              Discover the milestones that shaped Manila Cordage into the industry leader we are today
-            </p>
           </div>
 
           <div className="max-w-7xl mx-auto space-y-12">
