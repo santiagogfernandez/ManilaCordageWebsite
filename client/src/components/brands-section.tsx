@@ -88,9 +88,7 @@ export default function BrandsSection() {
           <h2 className="text-4xl font-bold text-navy-dark mb-4">
             Premium Materials, Expertly Crafted
           </h2>
-          <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            Manila Cordage uses top-quality natural and syntehtic rope materials to ensure exceptional strength and durability. Discover our advanced rope and cord solutions and explore how our craftsmanship meets your needs.
-          </p>
+          <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">Manila Cordage uses top-quality natural and synthetic rope materials to ensure exceptional strength and durability. Discover our advanced rope and cord solutions and explore how our craftsmanship meets your needs.</p>
         </div>
 
         <div className="relative">
