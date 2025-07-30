@@ -155,7 +155,7 @@ export default function Navigation() {
             {/* Get Quote Button */}
             <Link
               href="/contact"
-              className="bg-accent-blue hover:bg-blue-600 text-white px-3 xl:px-4 py-2 rounded-lg transition-colors font-medium text-sm xl:text-base whitespace-nowrap"
+              className="hover:bg-blue-600 text-white px-3 xl:px-4 py-2 rounded-lg transition-colors font-medium text-sm xl:text-base whitespace-nowrap bg-[#006fd3]"
             >
               {t('nav.quote')}
             </Link>
