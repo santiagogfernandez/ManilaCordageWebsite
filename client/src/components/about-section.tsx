@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { CheckCircle } from "lucide-react";
 import { useLanguage } from "@/hooks/use-language";
-import factoryImage from "@assets/MCCHistory11_1753876866749.jpg";
+import factoryImage from "@assets/MCCHistory2_1753799033849.jpg";
 
 export default function AboutSection() {
   const { t } = useLanguage();
@@ -26,7 +26,7 @@ export default function AboutSection() {
                   backgroundImage: `url(${factoryImage})`
                 }}
               />
-              <div className="absolute inset-0 bg-navy-dark bg-opacity-70 rounded-l-2xl lg:rounded-l-2xl lg:rounded-r-none flex flex-col justify-center items-start p-8 lg:p-12">
+              <div className="absolute inset-0 bg-navy-dark bg-opacity-70 rounded-l-2xl lg:rounded-l-2xl lg:rounded-r-none flex flex-col justify-end items-start p-8 lg:p-12">
                 <h3 className="text-2xl lg:text-3xl font-bold text-white leading-tight">
                   Manila Cordage is a<br />
                   leading Philippines rope<br />
