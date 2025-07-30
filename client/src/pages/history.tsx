@@ -79,7 +79,7 @@ export default function History() {
     },
     {
       year: "2025",
-      title: "Global Excellence Recognition",
+      title: "Entering a New Era of Excellence",
       description: "Continuing our journey of excellence with over 100+ years of quality rope making heritage and innovation.",
       milestone: true
     }

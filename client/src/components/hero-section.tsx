@@ -39,7 +39,7 @@ export default function HeroSection() {
           </Button>
           <Button 
             size="lg"
-            className="hover:bg-blue-600 text-white px-6 sm:px-8 py-3 sm:py-4 font-semibold transition-all transform hover:scale-105 w-full sm:w-auto text-base sm:text-lg touch-button bg-[#006dd1]"
+            className="hover:bg-blue-600 text-white px-6 sm:px-8 py-3 sm:py-4 font-semibold transition-all transform hover:scale-105 w-full sm:w-auto text-base sm:text-lg touch-button bg-[#006fd3]"
             onClick={() => scrollToSection('quote')}
           >
             {t('hero.cta2')}
