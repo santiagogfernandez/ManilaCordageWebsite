@@ -144,80 +144,80 @@ export default function History() {
       {/* Timeline Section */}
       <section className="py-16 sm:py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-2xl sm:text-3xl font-bold text-navy-dark mb-4">
-                Journey Through Time
-              </h2>
-              <p className="text-lg text-gray-600">
-                Discover the milestones that shaped Manila Cordage into the industry leader we are today
-              </p>
-            </div>
+          <div className="text-center mb-16">
+            <h2 className="text-2xl sm:text-3xl font-bold text-navy-dark mb-4">
+              Journey Through Time
+            </h2>
+            <p className="text-lg text-gray-600">
+              Discover the milestones that shaped Manila Cordage into the industry leader we are today
+            </p>
+          </div>
 
-            <div className="relative">
-              {/* Timeline Line */}
-              <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-0.5 bg-gray-300 transform md:-translate-x-0.5"></div>
-
-              {/* Timeline Events */}
-              <div className="space-y-12">
-                {timelineEvents.map((event, index) => (
-                  <div
-                    key={index}
-                    data-index={index}
-                    className={`timeline-item relative transition-all duration-700 ease-out ${
-                      visibleEvents.has(index) 
-                        ? 'opacity-100 translate-y-0' 
-                        : 'opacity-0 translate-y-8'
-                    }`}
-                  >
-                    <div className={`flex flex-col md:flex-row items-start md:items-center ${
-                      index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
-                    }`}>
-                      {/* Timeline Dot */}
-                      <div className="absolute left-8 md:left-1/2 transform -translate-x-1/2 md:-translate-x-1/2">
-                        <div className={`w-4 h-4 rounded-full border-4 border-white shadow-lg ${
-                          event.milestone ? 'bg-orange-accent' : 'bg-navy-dark'
-                        }`}></div>
+          <div className="max-w-7xl mx-auto space-y-12">
+            {timelineEvents.map((event, index) => (
+              <div
+                key={index}
+                data-index={index}
+                className={`timeline-item transition-all duration-700 ease-out ${
+                  visibleEvents.has(index) 
+                    ? 'opacity-100 translate-y-0' 
+                    : 'opacity-0 translate-y-8'
+                }`}
+              >
+                <Card className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 min-h-[400px]">
+                    {/* Image Section */}
+                    {event.image && (
+                      <div className="relative bg-navy-dark overflow-hidden">
+                        <img 
+                          src={event.image} 
+                          alt={`${event.title} - ${event.year}`}
+                          className="w-full h-full object-cover"
+                        />
+                        <div className="absolute inset-0 bg-navy-dark bg-opacity-20"></div>
+                        {/* Year Badge on Image */}
+                        <div className="absolute top-6 left-6">
+                          <span className={`inline-block px-4 py-2 rounded-full text-sm font-bold ${
+                            event.milestone 
+                              ? 'bg-orange-accent text-white shadow-lg' 
+                              : 'bg-navy-dark text-white shadow-lg'
+                          }`}>
+                            {event.year}
+                          </span>
+                        </div>
                       </div>
-
-                      {/* Content Card */}
-                      <div className={`w-full md:w-5/12 ml-16 md:ml-0 ${
-                        index % 2 === 0 ? 'md:mr-auto md:pr-8' : 'md:ml-auto md:pl-8'
-                      }`}>
-                        <Card className="hover:shadow-lg transition-shadow duration-300">
-                          <CardContent className="p-6">
-                            <div className="flex items-center mb-3">
-                              <span className={`inline-block px-3 py-1 rounded-full text-sm font-semibold ${
-                                event.milestone 
-                                  ? 'bg-orange-accent text-white' 
-                                  : 'bg-navy-dark text-white'
-                              }`}>
-                                {event.year}
-                              </span>
-                            </div>
-                            <h3 className="text-xl font-bold text-navy-dark mb-3">
-                              {event.title}
-                            </h3>
-                            {event.image && (
-                              <div className="mb-4">
-                                <img 
-                                  src={event.image} 
-                                  alt={`${event.title} - ${event.year}`}
-                                  className="w-full h-auto rounded-lg shadow-md object-cover max-h-64 sm:max-h-72 md:max-h-80"
-                                />
-                              </div>
-                            )}
-                            <p className="text-gray-600 leading-relaxed">
-                              {event.description}
-                            </p>
-                          </CardContent>
-                        </Card>
+                    )}
+                    
+                    {/* Content Section */}
+                    <div className={`p-8 lg:p-12 flex flex-col justify-center ${
+                      !event.image ? 'col-span-2 bg-gray-50' : 'bg-white'
+                    }`}>
+                      {!event.image && (
+                        <div className="mb-6">
+                          <span className={`inline-block px-4 py-2 rounded-full text-sm font-bold ${
+                            event.milestone 
+                              ? 'bg-orange-accent text-white' 
+                              : 'bg-navy-dark text-white'
+                          }`}>
+                            {event.year}
+                          </span>
+                        </div>
+                      )}
+                      
+                      <h3 className="text-2xl lg:text-3xl font-bold text-navy-dark mb-6">
+                        {event.title}
+                      </h3>
+                      
+                      <div className="space-y-4 text-gray-600 leading-relaxed text-base lg:text-lg">
+                        {event.description.split('\n\n').map((paragraph, pIndex) => (
+                          <p key={pIndex}>{paragraph}</p>
+                        ))}
                       </div>
                     </div>
                   </div>
-                ))}
+                </Card>
               </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
