@@ -1,4 +1,4 @@
-import { Trophy, Globe, Factory, Lightbulb, Link } from "lucide-react";
+import { Trophy, Globe, Flag, Link } from "lucide-react";
 import { useLanguage } from "@/hooks/use-language";
 
 export default function StatsSection() {
@@ -14,7 +14,7 @@ export default function StatsSection() {
       label: "International exports"
     },
     {
-      icon: Factory,
+      icon: Flag,
       label: "Philippines manufacturer"
     },
     {
