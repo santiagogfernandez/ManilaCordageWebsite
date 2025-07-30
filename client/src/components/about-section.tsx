@@ -30,7 +30,7 @@ export default function AboutSection() {
                   <div className="border-2 border-white rounded-full w-20 h-20 flex items-center justify-center mb-4">
                     <div className="text-center">
                       <div className="text-xs font-semibold">PERFORMANCE</div>
-                      <div className="text-lg font-bold">Since 1968</div>
+                      <div className="text-lg font-bold">Since 1924</div>
                       <div className="text-xs">ROPES & CORDS</div>
                     </div>
                   </div>
@@ -46,13 +46,13 @@ export default function AboutSection() {
             {/* Right side - Content */}
             <div className="bg-white p-8 lg:p-12 rounded-r-2xl lg:rounded-r-2xl lg:rounded-l-none">
               <h2 className="text-3xl lg:text-4xl font-bold text-navy-dark mb-6">
-                Leading Manufacturer of Ropes, Cords and Braids Since 1968
+                Leading Manufacturer of Ropes and Cords Since 1924
               </h2>
               
               <div className="space-y-4 mb-8 text-gray-600">
                 <p>
                   Manila Cordage is a leading Philippines manufacturer of ropes and cords, proudly 
-                  crafting high-quality products since 1968. As a trusted global supplier, we 
+                  crafting high-quality products since 1924. As a trusted global supplier, we 
                   offer an extensive range of stock products and bespoke technical rope 
                   solutions, employing innovative technologies to serve industries such as 
                   marine, defense, industrial, and arboriculture.
