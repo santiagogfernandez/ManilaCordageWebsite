@@ -163,7 +163,7 @@ export default function BrandsSection() {
             <Link href="/products">
               <Button 
                 size="lg"
-                className="bg-accent-blue hover:bg-blue-600 text-white px-8 py-3 font-semibold transition-all duration-300 rounded-lg"
+                className="hover:bg-blue-600 text-white px-8 py-3 font-semibold transition-all duration-300 rounded-lg bg-[#006ed2]"
               >
                 View All Products
               </Button>
