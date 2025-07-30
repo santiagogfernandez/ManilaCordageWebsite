@@ -51,15 +51,10 @@ export default function AboutSection() {
               
               <div className="space-y-4 mb-8 text-gray-600">
                 <p>
-                  Manila Cordage is a leading Philippines manufacturer of ropes and cords, proudly 
-                  crafting high-quality products since 1924. As a trusted global supplier, we 
-                  offer an extensive range of stock products and bespoke technical rope 
-                  solutions, employing innovative technologies to serve industries such as 
-                  marine, defense, industrial, and arboriculture.
+                  Manila Cordage has been a trusted name in rope and cordage manufacturing in the Philippines since 1924. With decades of expertise, we produce a wide range of high-quality fiber ropes and cordage products, serving both domestic and international markets.
                 </p>
                 <p>
-                  Our commitment to innovation and precision makes us the preferred choice 
-                  for world-leading brands across multiple sectors.
+                  We specialize in both standard and custom-engineered solutions to meet the demands of diverse industries—including marine, industrial, agriculture, and defense. Our commitment to quality, reliability, and continuous innovation has earned us the confidence of partners and clients around the world.
                 </p>
               </div>
 
