@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { CheckCircle } from "lucide-react";
 import { useLanguage } from "@/hooks/use-language";
+import factoryImage from "@assets/MCCHistory11_1753876866749.jpg";
 
 export default function AboutSection() {
   const { t } = useLanguage();
@@ -22,19 +23,10 @@ export default function AboutSection() {
               <div 
                 className="absolute inset-0 bg-cover bg-center rounded-l-2xl lg:rounded-l-2xl lg:rounded-r-none"
                 style={{ 
-                  backgroundImage: `url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop&crop=center')`
+                  backgroundImage: `url(${factoryImage})`
                 }}
               />
               <div className="absolute inset-0 bg-navy-dark bg-opacity-70 rounded-l-2xl lg:rounded-l-2xl lg:rounded-r-none flex flex-col justify-center items-start p-8 lg:p-12">
-                <div className="text-white mb-6">
-                  <div className="border-2 border-white rounded-full w-20 h-20 flex items-center justify-center mb-4">
-                    <div className="text-center">
-                      <div className="text-xs font-semibold">PERFORMANCE</div>
-                      <div className="text-lg font-bold">Since 1924</div>
-                      <div className="text-xs">ROPES & CORDS</div>
-                    </div>
-                  </div>
-                </div>
                 <h3 className="text-2xl lg:text-3xl font-bold text-white leading-tight">
                   Manila Cordage is a<br />
                   leading Philippines rope<br />
