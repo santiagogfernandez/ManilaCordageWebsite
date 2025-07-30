@@ -18,10 +18,6 @@ export default function StatsSection() {
       label: "British manufacturer"
     },
     {
-      icon: Lightbulb,
-      label: "We provide solutions"
-    },
-    {
       icon: Link,
       label: "Industry leading quality"
     }
@@ -30,7 +26,7 @@ export default function StatsSection() {
   return (
     <section className="bg-white border-t border-b border-gray-200 py-8">
       <div className="container mx-auto px-4">
-        <div className="flex flex-wrap justify-center items-center gap-8 lg:gap-16">
+        <div className="flex justify-center items-center gap-6 lg:gap-12 xl:gap-16">
           {stats.map((stat, index) => {
             const IconComponent = stat.icon;
             return (
