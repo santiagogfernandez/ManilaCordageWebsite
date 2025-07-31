@@ -5,19 +5,19 @@ import Footer from "@/components/footer";
 import ChatWidget from "@/components/chat-widget";
 import { useLanguage } from "@/hooks/use-language";
 
-export default function Contact() {
+export default function Quote() {
   const { t } = useLanguage();
 
   useEffect(() => {
-    document.title = "Contact Us - Manila Cordage | Get Quote & Support";
+    document.title = "Get Quote - Manila Cordage | Custom Rope Solutions";
     
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Contact Manila Cordage for custom rope solutions, bulk quotes, and technical support. Fast response times and expert consultation available.');
+      metaDescription.setAttribute('content', 'Get a custom quote for Manila Cordage rope solutions. Fast response times, bulk pricing, and expert consultation for all your rope manufacturing needs.');
     } else {
       const meta = document.createElement('meta');
       meta.name = 'description';
-      meta.content = 'Contact Manila Cordage for custom rope solutions, bulk quotes, and technical support. Fast response times and expert consultation available.';
+      meta.content = 'Get a custom quote for Manila Cordage rope solutions. Fast response times, bulk pricing, and expert consultation for all your rope manufacturing needs.';
       document.head.appendChild(meta);
     }
   }, []);

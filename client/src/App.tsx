@@ -9,7 +9,7 @@ import Products from "@/pages/products";
 import About from "@/pages/about";
 import History from "./pages/history";
 import Resources from "@/pages/resources";
-import Contact from "@/pages/contact";
+import Quote from "@/pages/contact";
 import CustomQuote from "@/pages/custom-quote";
 import NotFound from "@/pages/not-found";
 import ManilaRope from "@/pages/products/manila-rope";
@@ -33,7 +33,7 @@ function Router() {
       <Route path="/about" component={About} />
       <Route path="/about/history" component={History} />
       <Route path="/resources" component={Resources} />
-      <Route path="/contact" component={Contact} />
+      <Route path="/quote" component={Quote} />
       <Route path="/custom-quote" component={CustomQuote} />
       <Route component={NotFound} />
     </Switch>
