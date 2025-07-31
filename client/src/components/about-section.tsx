@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { CheckCircle } from "lucide-react";
 import { useLanguage } from "@/hooks/use-language";
+import { Link } from "wouter";
 import factoryImage from "/images/manila-cordage-factory-1924.jpg";
 
 
@@ -56,12 +57,14 @@ export default function AboutSection() {
                 </p>
               </div>
 
-              <Button 
-                size="lg"
-                className="bg-transparent border-2 border-navy-dark text-navy-dark hover:bg-navy-dark hover:text-white px-8 py-3 font-semibold transition-all rounded-full"
-              >
-                FIND OUT MORE →
-              </Button>
+              <Link href="/about/history">
+                <Button 
+                  size="lg"
+                  className="bg-transparent border-2 border-navy-dark text-navy-dark hover:bg-navy-dark hover:text-white px-8 py-3 font-semibold transition-all rounded-full"
+                >
+                  FIND OUT MORE →
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
