@@ -183,16 +183,16 @@ export default function History() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="/about"
+                href="/about/team"
                 className="bg-navy-dark hover:bg-navy-dark/90 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
               >
-                Learn More About Us
+                Learn About Team
               </a>
               <a
-                href="/contact"
+                href="/quote"
                 className="bg-orange-accent hover:bg-orange-accent/90 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
               >
-                Get In Touch
+                Get Quote
               </a>
             </div>
           </div>
