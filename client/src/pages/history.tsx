@@ -184,7 +184,7 @@ export default function History() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="/about/team"
-                className="bg-navy-dark hover:bg-navy-dark/90 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
+                className="hover:bg-navy-dark/90 text-white px-8 py-3 rounded-lg font-semibold transition-colors bg-[#006ed2]"
               >
                 Learn About Team
               </a>
