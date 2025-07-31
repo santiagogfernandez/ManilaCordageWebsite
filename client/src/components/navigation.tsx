@@ -14,7 +14,6 @@ export default function Navigation() {
   const navItems = [
     { key: 'products', path: '/products' },
     { key: 'resources', path: '/resources' },
-    { key: 'contact', path: '/contact' },
   ];
 
   const aboutSubItems = [
