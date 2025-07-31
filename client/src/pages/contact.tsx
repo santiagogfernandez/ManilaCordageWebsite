@@ -26,21 +26,7 @@ export default function Contact() {
     <div className="min-h-screen bg-background">
       <Navigation />
       <main className="pt-16">
-        {/* Contact Header */}
-        <section className="section-padding bg-gray-50">
-          <div className="container mx-auto container-padding">
-            <div className="text-center max-w-3xl mx-auto">
-              <h1 className="responsive-heading font-bold mb-4 text-navy-dark">
-                {t('nav.contact')}
-              </h1>
-              <p className="responsive-body text-gray-600 mb-8">
-                Get in touch with our team for inquiries, quotes, and support. We're here to help with all your rope manufacturing needs.
-              </p>
-            </div>
-            
-            
-          </div>
-        </section>
+        
         
         <QuoteSection />
       </main>
