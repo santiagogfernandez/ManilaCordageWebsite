@@ -190,7 +190,7 @@ export default function History() {
               </a>
               <a
                 href="/quote"
-                className="bg-orange-accent hover:bg-orange-accent/90 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
+                className="hover:bg-orange-accent/90 text-white px-8 py-3 rounded-lg font-semibold transition-colors bg-[#006fd3]"
               >
                 Get Quote
               </a>
