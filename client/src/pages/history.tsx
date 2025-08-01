@@ -3,7 +3,7 @@ import { useLanguage } from "@/hooks/use-language";
 import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
 import { Card, CardContent } from "@/components/ui/card";
-import historicalPhoto from "@assets/MCCHistory1_1754037057282.jpg";
+import historicalPhoto from "@assets/MCCHistory2_1754037099624.jpg";
 import modernPhoto from "@assets/MCC MSI Group_1753799439492.jpg";
 
 interface TimelineEvent {
