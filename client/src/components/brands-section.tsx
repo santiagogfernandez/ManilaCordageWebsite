@@ -54,7 +54,7 @@ export default function BrandsSection() {
     },
     {
       id: 6,
-      name: "Polyester Compound",
+      name: "Polyester Compound Rope",
       description: "Explore our Polyester Compound Technologies",
       buttonText: "View Terypro ropes",
       imageUrl: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=400&h=250&fit=crop&crop=center",
