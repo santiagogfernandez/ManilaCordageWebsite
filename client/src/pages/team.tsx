@@ -73,38 +73,7 @@ export default function Team() {
     }
   ];
 
-  const departments = [
-    {
-      name: "Executive Leadership",
-      description: "Strategic direction and company vision",
-      color: "bg-navy-dark"
-    },
-    {
-      name: "Operations",
-      description: "Manufacturing and operational excellence",
-      color: "bg-[#006fd3]"
-    },
-    {
-      name: "Innovation",
-      description: "Research, development, and sustainability",
-      color: "bg-orange-accent"
-    },
-    {
-      name: "Commercial",
-      description: "Sales, marketing, and client relations",
-      color: "bg-[#006ed2]"
-    },
-    {
-      name: "Quality",
-      description: "Quality assurance and standards",
-      color: "bg-gray-600"
-    },
-    {
-      name: "Manufacturing",
-      description: "Production and technical operations",
-      color: "bg-[#006dd1]"
-    }
-  ];
+
 
   return (
     <div className="min-h-screen bg-white">
@@ -204,38 +173,7 @@ export default function Team() {
         </div>
       </section>
 
-      {/* Departments Overview */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl sm:text-4xl font-bold text-navy-dark mb-4">
-                Our Departments
-              </h2>
-              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                Each department plays a crucial role in Manila Cordage's success, 
-                working together to deliver excellence in every strand.
-              </p>
-            </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {departments.map((dept, index) => (
-                <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
-                  <div className={`h-1 ${dept.color}`}></div>
-                  <div className="p-6">
-                    <h3 className="text-lg font-bold text-navy-dark mb-2">
-                      {dept.name}
-                    </h3>
-                    <p className="text-gray-600">
-                      {dept.description}
-                    </p>
-                  </div>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Join Our Team CTA */}
       <section className="bg-gradient-to-r from-[#006fd3] to-navy-dark text-white py-16">
