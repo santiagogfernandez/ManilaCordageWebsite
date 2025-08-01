@@ -80,26 +80,11 @@ export default function Team() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-navy-dark to-[#006fd3] text-white py-20">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
-              Meet Our Team
-            </h1>
-            <p className="text-xl sm:text-2xl text-blue-100 mb-8">
-              The experienced professionals driving Manila Cordage's success for over 100 years
-            </p>
-            <div className="flex flex-wrap justify-center gap-4 text-sm sm:text-base">
-              <div className="bg-white/10 backdrop-blur-sm rounded-full px-4 py-2">
-                <span className="font-semibold">100+ Years</span> of Combined Experience
-              </div>
-              <div className="bg-white/10 backdrop-blur-sm rounded-full px-4 py-2">
-                <span className="font-semibold">6 Departments</span> Working as One
-              </div>
-              <div className="bg-white/10 backdrop-blur-sm rounded-full px-4 py-2">
-                <span className="font-semibold">Philippines</span> Based Leadership
-              </div>
-            </div>
+      <section className="relative bg-navy-dark text-white py-16 sm:py-24">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center max-w-4xl mx-auto">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">Meet Our Team</h1>
+            <p className="text-lg sm:text-xl text-gray-300 mb-8">The experienced professionals driving Manila Cordage's success for over 100 years</p>
           </div>
         </div>
       </section>
