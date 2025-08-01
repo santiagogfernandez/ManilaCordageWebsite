@@ -39,8 +39,8 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
-      <HeroSection />
       <StatsSection />
+      <HeroSection />
       <AboutSection />
       <BrandsSection />
       <ClientBrandsSection />
