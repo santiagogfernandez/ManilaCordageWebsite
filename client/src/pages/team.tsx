@@ -136,19 +136,7 @@ export default function Team() {
                         {member.bio}
                       </p>
 
-                      <div className="mb-4">
-                        <h4 className="font-semibold text-navy-dark mb-2">Expertise:</h4>
-                        <div className="flex flex-wrap gap-2">
-                          {member.expertise.map((skill, skillIndex) => (
-                            <span 
-                              key={skillIndex}
-                              className="bg-gray-100 text-gray-700 px-2 py-1 rounded-full text-xs font-medium"
-                            >
-                              {skill}
-                            </span>
-                          ))}
-                        </div>
-                      </div>
+
 
                       <div className="flex items-center space-x-3 pt-4 border-t border-gray-100">
                         <a 
