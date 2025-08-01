@@ -46,7 +46,7 @@ export default function History() {
       image: expansionPhoto
     },
     {
-      year: "1990s",
+      year: "1980s - 2000s",
       title: "New Era Of Excellence",
       description: "Manila Cordage solidifies its position as the leading rope manufacturer in the Philippines, holding the top spot in the local industry for over 33 years.\n\nThe company operates two dedicated mills—one for synthetic fibers and another for hard fibers—allowing focused innovation across product lines. As the only ISO 9001:2000-certified cordage manufacturer in the country, Manco sets the benchmark for quality and reliability.\n\nWith growing demand for synthetic rope, Manco continues to expand production while maintaining Manila rope as a vital offering—recognized for its eco-friendly qualities and indispensable role in industries like construction and oil drilling.",
       milestone: true,
