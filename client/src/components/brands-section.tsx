@@ -117,16 +117,16 @@ export default function BrandsSection() {
           <div className="mx-12">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 transition-all duration-500 ease-in-out">
               {brands.map((brand) => (
-                <Card key={brand.id} className="overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                <Card key={brand.id} className="overflow-hidden hover:shadow-lg transition-shadow duration-300 flex flex-col h-full">
                   <div 
                     className="h-64 bg-cover bg-center"
                     style={{ backgroundImage: `url(${brand.imageUrl})` }}
                   />
-                  <CardContent className="p-8">
+                  <CardContent className="p-8 flex flex-col flex-grow">
                     <h3 className="text-2xl font-bold text-navy-dark mb-4">
                       {brand.name}
                     </h3>
-                    <p className="text-text-light mb-6 leading-relaxed">
+                    <p className="text-text-light mb-6 leading-relaxed flex-grow">
                       {brand.description}
                     </p>
                     <Link href={brand.buttonPath}>
