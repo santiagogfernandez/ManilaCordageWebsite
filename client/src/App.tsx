@@ -8,6 +8,7 @@ import Home from "@/pages/home";
 import Products from "@/pages/products";
 import About from "@/pages/about";
 import History from "./pages/history";
+import Team from "./pages/team";
 import Resources from "@/pages/resources";
 import Quote from "@/pages/contact";
 import CustomQuote from "@/pages/custom-quote";
@@ -32,6 +33,7 @@ function Router() {
       <Route path="/products/terypro-rope" component={TeryproRope} />
       <Route path="/about" component={About} />
       <Route path="/about/history" component={History} />
+      <Route path="/about/team" component={Team} />
       <Route path="/resources" component={Resources} />
       <Route path="/quote" component={Quote} />
       <Route path="/custom-quote" component={CustomQuote} />
