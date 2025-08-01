@@ -17,7 +17,6 @@ export default function Navigation() {
   ];
 
   const aboutSubItems = [
-    { key: 'about', path: '/about', label: t('nav.about') },
     { key: 'history', path: '/about/history', label: t('nav.history') },
     { key: 'team', path: '/about/team', label: t('nav.team') },
     { key: 'careers', path: '/about/careers', label: t('nav.careers') },
