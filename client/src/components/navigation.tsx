@@ -24,11 +24,11 @@ export default function Navigation() {
 
   const productSubItems = [
     { key: 'manila', label: 'Manila Rope', path: '/products/manila-rope' },
-    { key: 'skyline', label: 'Skyline Rope', path: '/products/skyline-rope' },
-    { key: 'danline', label: 'Danline Rope', path: '/products/danline-rope' },
-    { key: 'nyline', label: 'Nyline Rope', path: '/products/nyline-rope' },
-    { key: 'esterline', label: 'Esterline Rope', path: '/products/esterline-rope' },
-    { key: 'terypro', label: 'Terypro Rope', path: '/products/terypro-rope' }
+    { key: 'skyline', label: 'Polypropylene Rope', path: '/products/skyline-rope' },
+    { key: 'danline', label: 'Polypropylene Compound Rope', path: '/products/danline-rope' },
+    { key: 'nyline', label: 'Nylon Rope', path: '/products/nyline-rope' },
+    { key: 'esterline', label: 'Polyester Rope', path: '/products/esterline-rope' },
+    { key: 'terypro', label: 'Polyester Compound Rope', path: '/products/terypro-rope' }
   ];
 
   return (
