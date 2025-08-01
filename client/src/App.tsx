@@ -9,9 +9,11 @@ import Products from "@/pages/products";
 import About from "@/pages/about";
 import History from "./pages/history";
 import Team from "./pages/team";
+import Careers from "./pages/careers";
 import Resources from "@/pages/resources";
 import Quote from "@/pages/contact";
 import CustomQuote from "@/pages/custom-quote";
+import PrivacyPolicy from "@/pages/privacy-policy";
 import NotFound from "@/pages/not-found";
 import ManilaRope from "@/pages/products/manila-rope";
 import SkylineRope from "@/pages/products/skyline-rope";
@@ -34,9 +36,13 @@ function Router() {
       <Route path="/about" component={About} />
       <Route path="/about/history" component={History} />
       <Route path="/about/team" component={Team} />
+      <Route path="/about/careers" component={Careers} />
+      <Route path="/careers" component={Careers} />
       <Route path="/resources" component={Resources} />
+      <Route path="/contact" component={Quote} />
       <Route path="/quote" component={Quote} />
       <Route path="/custom-quote" component={CustomQuote} />
+      <Route path="/privacy-policy" component={PrivacyPolicy} />
       <Route component={NotFound} />
     </Switch>
   );
