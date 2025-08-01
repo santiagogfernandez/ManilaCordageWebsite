@@ -5,6 +5,7 @@ import Footer from "@/components/footer";
 import { Card, CardContent } from "@/components/ui/card";
 import historicalPhoto from "@assets/MCCHistory2_1754037099624.jpg";
 import wwiiPhoto from "@assets/MCCHistory1_1754037123631.jpg";
+import expansionPhoto from "@assets/MCCHistory3_1754037150200.jpg";
 import modernPhoto from "@assets/MCC MSI Group_1753799439492.jpg";
 
 interface TimelineEvent {
@@ -40,7 +41,7 @@ export default function History() {
       title: "Post-War Expansion",
       description: "Groundbreaking for the new mill in Makati took place in 1964. A year later, the work was finished; the mill was cited as the \"most modern rope facility in the Far East.\" In 1966, Manila Cordage began the production of large-sized plaited synthetic ropes, the first to do so in the Philippines. The Seventies ushered in a major organization change. A group of Filipino businessmen acquired majority control of the Company. Under the new management team, Manco entered a new growth stage.",
       milestone: true,
-      image: "/images/manila-cordage-expansion.jpg"
+      image: expansionPhoto
     },
     {
       year: "1990s",
