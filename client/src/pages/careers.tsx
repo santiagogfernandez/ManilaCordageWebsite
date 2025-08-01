@@ -84,6 +84,11 @@ export default function Careers() {
       return;
     }
 
+    if (!data.gdprConsent) {
+      form.setError("gdprConsent", { message: "You must consent to the privacy policy to proceed" });
+      return;
+    }
+
     setIsSubmitting(true);
     
     try {
@@ -512,8 +517,8 @@ export default function Careers() {
 
                     <Button 
                       type="submit" 
-                      disabled={isSubmitting}
-                      className="w-full bg-[#006fd3] hover:bg-[#005bb8] text-white py-3 text-lg"
+                      disabled={isSubmitting || !recaptchaToken || !form.watch('gdprConsent')}
+                      className="w-full bg-[#006fd3] hover:bg-[#005bb8] text-white py-3 text-lg disabled:opacity-50 disabled:cursor-not-allowed"
                     >
                       {isSubmitting ? "Submitting..." : "Submit Application"}
                     </Button>
