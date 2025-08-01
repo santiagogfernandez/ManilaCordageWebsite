@@ -14,7 +14,7 @@ export default function BrandsSection() {
   const allBrands = [
     {
       id: 1,
-      name: "Manila",
+      name: "Manila Rope",
       description: "Explore our range of Manila rope technologies",
       buttonText: "View Manila ropes",
       imageUrl: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=400&h=250&fit=crop&crop=center",
@@ -22,7 +22,7 @@ export default function BrandsSection() {
     },
     {
       id: 2,
-      name: "Skyline",
+      name: "Polypropylene Rope",
       description: "Ultra‑Light, UV‑Stable Polypropylene Rope Built for the Elements",
       buttonText: "View Skyline ropes",
       imageUrl: skylineImage,
@@ -30,7 +30,7 @@ export default function BrandsSection() {
     },
     {
       id: 3,
-      name: "Danline",
+      name: "Polypropylene & Polyethylene Compound Rope",
       description: "Explore our range of Polypropylene Danline rope technologies",
       buttonText: "View Danline ropes",
       imageUrl: "https://images.unsplash.com/photo-1569163139394-de4e4f43e4e3?w=400&h=250&fit=crop&crop=center",
@@ -38,7 +38,7 @@ export default function BrandsSection() {
     },
     {
       id: 4,
-      name: "Nyline",
+      name: "Nylon",
       description: "Explore our range of premium Nylon rope technologies",
       buttonText: "View Nyline ropes",
       imageUrl: nylineImage,
@@ -46,7 +46,7 @@ export default function BrandsSection() {
     },
     {
       id: 5,
-      name: "Esterline",
+      name: "Polyester",
       description: "Explore our range of Polyester rope technologies",
       buttonText: "View Esterline ropes",
       imageUrl: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&h=250&fit=crop&crop=center",
@@ -54,7 +54,7 @@ export default function BrandsSection() {
     },
     {
       id: 6,
-      name: "Terypro",
+      name: "Polyester Compound",
       description: "Explore our Polyester Compound Technologies",
       buttonText: "View Terypro ropes",
       imageUrl: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=400&h=250&fit=crop&crop=center",
