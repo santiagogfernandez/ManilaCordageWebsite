@@ -16,7 +16,7 @@ export default function BrandsSection() {
       id: 1,
       name: "Manila Rope",
       description: "Explore our range of Manila rope technologies",
-      buttonText: "View Manila ropes",
+      buttonText: "View Manila Rope",
       imageUrl: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=400&h=250&fit=crop&crop=center",
       buttonPath: "/products/manila-rope"
     },
@@ -24,7 +24,7 @@ export default function BrandsSection() {
       id: 2,
       name: "Polypropylene Rope",
       description: "Ultra‑Light, UV‑Stable Polypropylene Rope Built for the Elements",
-      buttonText: "View Skyline ropes",
+      buttonText: "View Polypropylene Rope",
       imageUrl: skylineImage,
       buttonPath: "/products/skyline-rope"
     },
@@ -32,7 +32,7 @@ export default function BrandsSection() {
       id: 3,
       name: "Polypropylene Compound Rope",
       description: "Explore our range of Polypropylene Danline rope technologies",
-      buttonText: "View Danline ropes",
+      buttonText: "View Polypropylene Compound Rope",
       imageUrl: "https://images.unsplash.com/photo-1569163139394-de4e4f43e4e3?w=400&h=250&fit=crop&crop=center",
       buttonPath: "/products/danline-rope"
     },
@@ -40,7 +40,7 @@ export default function BrandsSection() {
       id: 4,
       name: "Nylon Rope",
       description: "Explore our range of premium Nylon rope technologies",
-      buttonText: "View Nyline ropes",
+      buttonText: "View Nylon Rope",
       imageUrl: nylineImage,
       buttonPath: "/products/nyline-rope"
     },
@@ -48,7 +48,7 @@ export default function BrandsSection() {
       id: 5,
       name: "Polyester Rope",
       description: "Explore our range of Polyester rope technologies",
-      buttonText: "View Esterline ropes",
+      buttonText: "View Polyester Rope",
       imageUrl: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&h=250&fit=crop&crop=center",
       buttonPath: "/products/esterline-rope"
     },
@@ -56,7 +56,7 @@ export default function BrandsSection() {
       id: 6,
       name: "Polyester Compound Rope",
       description: "Explore our Polyester Compound Technologies",
-      buttonText: "View Terypro ropes",
+      buttonText: "View Polyester Compound Rope",
       imageUrl: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=400&h=250&fit=crop&crop=center",
       buttonPath: "/products/terypro-rope"
     }
