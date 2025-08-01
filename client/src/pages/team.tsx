@@ -119,11 +119,9 @@ export default function Team() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {teamMembers.map((member, index) => {
-                const department = departments.find(dept => dept.name === member.department);
-                return (
-                  <Card key={index} className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                    <div className={`h-2 ${department?.color || 'bg-gray-400'}`}></div>
+              {teamMembers.map((member, index) => (
+                <Card key={index} className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                  <div className="h-2 bg-[#006fd3]"></div>
                     <div className="p-6">
                       <div className="mb-4">
                         <h3 className="text-xl font-bold text-navy-dark mb-1">
@@ -166,8 +164,7 @@ export default function Team() {
                       </div>
                     </div>
                   </Card>
-                );
-              })}
+                ))}
             </div>
           </div>
         </div>
