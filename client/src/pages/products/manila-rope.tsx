@@ -182,8 +182,8 @@ export default function ManilaRope() {
                   </Button>
                 </Link>
                 <Link href="/products">
-                  <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-navy-dark px-8 py-4">
-                    View All Products
+                  <Button size="lg" className="hover:bg-blue-600 text-white px-8 py-4 font-semibold transition-all duration-300 rounded-lg bg-[#006ed2]">
+                    See All Our Products
                   </Button>
                 </Link>
               </div>
