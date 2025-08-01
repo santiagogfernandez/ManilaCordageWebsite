@@ -6,6 +6,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import historicalPhoto from "@assets/MCCHistory2_1754037099624.jpg";
 import wwiiPhoto from "@assets/MCCHistory1_1754037123631.jpg";
 import expansionPhoto from "@assets/MCCHistory3_1754037150200.jpg";
+import excellencePhoto from "@assets/MCCHistory6 (1)_1754037168824.jpg";
 import modernPhoto from "@assets/MCC MSI Group_1753799439492.jpg";
 
 interface TimelineEvent {
@@ -47,7 +48,8 @@ export default function History() {
       year: "1990s",
       title: "New Era Of Excellence",
       description: "Manila Cordage solidifies its position as the leading rope manufacturer in the Philippines, holding the top spot in the local industry for over 33 years.\n\nThe company operates two dedicated mills—one for synthetic fibers and another for hard fibers—allowing focused innovation across product lines. As the only ISO 9001:2000-certified cordage manufacturer in the country, Manco sets the benchmark for quality and reliability.\n\nWith growing demand for synthetic rope, Manco continues to expand production while maintaining Manila rope as a vital offering—recognized for its eco-friendly qualities and indispensable role in industries like construction and oil drilling.",
-      milestone: true
+      milestone: true,
+      image: excellencePhoto
     },
     {
       year: "2001",
