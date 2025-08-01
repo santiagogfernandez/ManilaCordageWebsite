@@ -7,6 +7,7 @@ import historicalPhoto from "@assets/MCCHistory2_1754037099624.jpg";
 import wwiiPhoto from "@assets/MCCHistory1_1754037123631.jpg";
 import expansionPhoto from "@assets/MCCHistory3_1754037150200.jpg";
 import excellencePhoto from "@assets/MCCHistory6 (1)_1754037168824.jpg";
+import centennialPhoto from "@assets/MCCHistory11_1754037202397.jpg";
 import modernPhoto from "@assets/MCC MSI Group_1753799439492.jpg";
 
 interface TimelineEvent {
@@ -55,7 +56,8 @@ export default function History() {
       year: "2001",
       title: "A Century of Craftsmanship, A Future of Possibility",
       description: "Manila Cordage enters the new millennium with a bold move—relocating to a 6.4-hectare facility in the heart of the country's industrial hub. Purpose-built for expansion, this new home positions Manco for long-term growth and operational efficiency.\n\nBacked by a dedicated and loyal workforce, the company continues to thrive—evolving with the times while staying true to its legacy of quality and innovation.\n\nIn 2024, Manila Cordage proudly celebrated its 100th year—an enduring symbol of resilience, craftsmanship, and leadership in the rope and cordage industry. With a century behind it and a strong foundation ahead, Manco looks to the future with confidence and purpose.",
-      milestone: false
+      milestone: false,
+      image: centennialPhoto
     }
   ];
 
