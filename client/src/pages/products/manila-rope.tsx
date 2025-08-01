@@ -70,11 +70,7 @@ export default function ManilaRope() {
                     Request Quote
                   </Button>
                 </Link>
-                <Link href="/custom-quote">
-                  <Button size="lg" variant="outline" className="border-navy-dark text-navy-dark hover:bg-navy-dark hover:text-white px-8 py-4">
-                    Custom Specifications
-                  </Button>
-                </Link>
+
               </div>
             </div>
           </div>
