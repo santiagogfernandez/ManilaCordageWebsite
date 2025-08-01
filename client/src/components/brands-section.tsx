@@ -46,7 +46,7 @@ export default function BrandsSection() {
     },
     {
       id: 5,
-      name: "Polyester",
+      name: "Polyester Rope",
       description: "Explore our range of Polyester rope technologies",
       buttonText: "View Esterline ropes",
       imageUrl: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&h=250&fit=crop&crop=center",
