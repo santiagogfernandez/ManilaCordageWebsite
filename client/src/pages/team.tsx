@@ -176,10 +176,10 @@ export default function Team() {
                 View Career Opportunities
               </a>
               <a
-                href="/quote"
-                className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#006fd3] px-8 py-3 rounded-lg font-semibold transition-all"
+                href="/contact"
+                className="bg-white text-[#006fd3] hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition-colors"
               >
-                Work With Our Team
+                Contact Us
               </a>
             </div>
           </div>
