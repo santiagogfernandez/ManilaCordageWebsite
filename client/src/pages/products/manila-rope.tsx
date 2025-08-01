@@ -67,7 +67,7 @@ export default function ManilaRope() {
               <div className="flex flex-wrap gap-4">
                 <Link href="/contact">
                   <Button size="lg" className="bg-orange-accent hover:bg-orange-accent/90 text-white px-8 py-4">
-                    Request Quote
+                    Get Quote
                   </Button>
                 </Link>
 
