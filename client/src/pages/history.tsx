@@ -192,7 +192,7 @@ export default function History() {
                 href="/about/team"
                 className="hover:bg-navy-dark/90 text-white px-8 py-3 rounded-lg font-semibold transition-colors bg-[#006ed2]"
               >
-                Learn About Team
+                Learn About The Team
               </a>
               <a
                 href="/quote"
