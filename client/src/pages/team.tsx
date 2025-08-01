@@ -153,7 +153,7 @@ export default function Team() {
               Be part of Manila Cordage's next century of innovation. We're always looking for 
               talented individuals who share our commitment to quality and excellence.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-row gap-4 justify-center">
               <a
                 href="/about/careers"
                 className="bg-white text-[#006fd3] hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition-colors"
