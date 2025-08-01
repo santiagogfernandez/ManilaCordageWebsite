@@ -24,7 +24,7 @@ export default function StatsSection() {
   ];
 
   return (
-    <section className="bg-white border-t border-b border-gray-200 py-8">
+    <section className="bg-white border-t border-b border-gray-200 py-8 pt-[15px] pb-[15px]">
       <div className="container mx-auto px-4">
         <div className="flex justify-center items-center gap-6 lg:gap-12 xl:gap-16">
           {stats.map((stat, index) => {
