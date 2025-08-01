@@ -23,7 +23,7 @@ const applicationSchema = z.object({
   phone: z.string().min(10, "Please enter a valid phone number"),
   position: z.string().min(1, "Please select a position of interest"),
   experience: z.string().min(1, "Please select your experience level"),
-  coverLetter: z.string().min(50, "Cover letter must be at least 50 characters"),
+
   cv: z.any().optional(),
   gdprConsent: z.boolean().refine((val) => val === true, {
     message: "You must consent to the privacy policy to proceed"
@@ -47,7 +47,7 @@ export default function Careers() {
       phone: "",
       position: "",
       experience: "",
-      coverLetter: "",
+
       gdprConsent: false,
       recaptcha: ""
     }
@@ -433,26 +433,7 @@ export default function Careers() {
                       )}
                     />
 
-                    <FormField
-                      control={form.control}
-                      name="coverLetter"
-                      render={({ field }) => (
-                        <FormItem>
-                          <FormLabel>Cover Letter *</FormLabel>
-                          <FormControl>
-                            <Textarea
-                              placeholder="Tell us why you're interested in joining Manila Cordage and what you can bring to our team..."
-                              className="min-h-[120px]"
-                              {...field}
-                            />
-                          </FormControl>
-                          <FormDescription>
-                            Minimum 50 characters required
-                          </FormDescription>
-                          <FormMessage />
-                        </FormItem>
-                      )}
-                    />
+
 
                     {/* reCAPTCHA Placeholder */}
                     <div className="space-y-4">
