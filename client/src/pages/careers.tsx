@@ -505,9 +505,18 @@ export default function Careers() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                               >
-                                Data Privacy Act of 2012 (Republic Act 10173)
+                                Privacy Policy
                               </a>{" "}
-                              of the Philippines for recruitment purposes.
+                              and{" "}
+                              <a 
+                                href="/terms-conditions" 
+                                className="text-[#006fd3] hover:underline"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                Terms & Conditions
+                              </a>{" "}
+                              for recruitment purposes.
                             </FormDescription>
                             <FormMessage />
                           </div>

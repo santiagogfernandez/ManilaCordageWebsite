@@ -14,6 +14,7 @@ import Resources from "@/pages/resources";
 import Quote from "@/pages/contact";
 import CustomQuote from "@/pages/custom-quote";
 import PrivacyPolicy from "@/pages/privacy-policy";
+import TermsConditions from "@/pages/terms-conditions";
 import NotFound from "@/pages/not-found";
 import ManilaRope from "@/pages/products/manila-rope";
 import SkylineRope from "@/pages/products/skyline-rope";
@@ -43,6 +44,7 @@ function Router() {
       <Route path="/quote" component={Quote} />
       <Route path="/custom-quote" component={CustomQuote} />
       <Route path="/privacy-policy" component={PrivacyPolicy} />
+      <Route path="/terms-conditions" component={TermsConditions} />
       <Route component={NotFound} />
     </Switch>
   );

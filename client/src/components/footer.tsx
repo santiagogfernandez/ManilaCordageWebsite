@@ -137,12 +137,12 @@ export default function Footer() {
             {t('footer.copyright')}
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="text-gray-300 hover:text-accent-blue text-sm transition-colors">
+            <Link href="/privacy-policy" className="text-gray-300 hover:text-accent-blue text-sm transition-colors">
               {t('footer.privacy')}
-            </a>
-            <a href="#" className="text-gray-300 hover:text-accent-blue text-sm transition-colors">
-              {t('footer.terms')}
-            </a>
+            </Link>
+            <Link href="/terms-conditions" className="text-gray-300 hover:text-accent-blue text-sm transition-colors">
+              Terms & Conditions
+            </Link>
             <a href="#" className="text-gray-300 hover:text-accent-blue text-sm transition-colors">
               {t('footer.sitemap')}
             </a>
