@@ -62,16 +62,6 @@ export default function Navigation() {
                       </Button>
                     </DropdownMenuTrigger>
                     <DropdownMenuContent>
-                      <DropdownMenuItem asChild>
-                        <Link
-                          href="/products"
-                          className={`w-full cursor-pointer ${
-                            location === '/products' ? 'text-orange-accent' : ''
-                          }`}
-                        >
-                          All Products
-                        </Link>
-                      </DropdownMenuItem>
                       {productSubItems.map((subItem) => (
                         <DropdownMenuItem key={subItem.key} asChild>
                           <Link
