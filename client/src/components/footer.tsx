@@ -7,12 +7,12 @@ export default function Footer() {
   const { t } = useLanguage();
 
   const productLinks = [
-    { name: "Manila", href: "/products/manila-rope" },
-    { name: "Skyline", href: "/products/skyline-rope" },
-    { name: "Danline", href: "/products/danline-rope" },
-    { name: "Nyline", href: "/products/nyline-rope" },
-    { name: "Esterline", href: "/products/esterline-rope" },
-    { name: "Terypro", href: "/products/terypro-rope" }
+    { name: "Manila Rope", href: "/products/manila-rope" },
+    { name: "Polypropylene Rope", href: "/products/skyline-rope" },
+    { name: "Polypropylene Compound Rope", href: "/products/danline-rope" },
+    { name: "Nylon Rope", href: "/products/nyline-rope" },
+    { name: "Polyester Rope", href: "/products/esterline-rope" },
+    { name: "Polyester Compound Rope", href: "/products/terypro-rope" }
   ];
 
   const companyLinks = [
