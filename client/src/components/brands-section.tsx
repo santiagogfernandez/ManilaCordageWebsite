@@ -30,7 +30,7 @@ export default function BrandsSection() {
     },
     {
       id: 3,
-      name: "Polypropylene & Polyethylene Compound Rope",
+      name: "Polypropylene Compound Rope",
       description: "Explore our range of Polypropylene Danline rope technologies",
       buttonText: "View Danline ropes",
       imageUrl: "https://images.unsplash.com/photo-1569163139394-de4e4f43e4e3?w=400&h=250&fit=crop&crop=center",
