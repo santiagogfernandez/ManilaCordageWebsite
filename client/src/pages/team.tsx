@@ -130,9 +130,6 @@ export default function Team() {
                         <p className="text-[#006fd3] font-semibold mb-1">
                           {member.position}
                         </p>
-                        <p className="text-sm text-gray-500">
-                          {member.department}
-                        </p>
                       </div>
 
                       <p className="text-gray-600 mb-4 leading-relaxed">
